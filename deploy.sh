@@ -6,7 +6,7 @@ cp -r ~/vault\ 2.0/0_portfolio content
 # 2. Sync with GitHub
 git add .
 git commit -m "Site update: $(date)"
-git push origin main
+git push origin master
 
 # 3. Restore the symlink for local editing
 rm -rf content
