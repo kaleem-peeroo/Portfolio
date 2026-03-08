@@ -1,14 +1,29 @@
 #!/bin/bash
-# 1. Remove old content and copy fresh files from your vault
+# 1. Prepare Content
+# Remove the symlink and copy actual files for the build
 rm -rf content
 cp -r ~/vault\ 2.0/0_portfolio content
 
-# 2. Sync with GitHub
+# 2. Build the Site
+# This generates the HTML in the /public folder
+npx quartz build
+
+# 3. Deploy to Cloudflare
+# This pushes the /public folder to your domain immediately
+npx wrangler deploy
+
+# 4. Sync with GitHub (Backup)
+# Renamed branch to 'main' - adjust to 'master' if you didn't rename it
 git add .
 git commit -m "Site update: $(date)"
-git push origin master
+git push origin main
 
-# 3. Restore the symlink for local editing
+# 5. Restore Workflow
+# Put the symlink back so Obsidian works as usual
 rm -rf content
 ln -s ~/vault\ 2.0/0_portfolio content
-echo "Deployment complete and symlink restored."
+
+echo "---------------------------------------"
+echo "✅ Deployment complete!"
+echo "Site live at: https://kaleempeeroo.com"
+echo "---------------------------------------"
