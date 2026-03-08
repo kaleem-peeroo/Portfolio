@@ -1,3 +1,7 @@
-This is the index of the portfolio. Hello!
+Hello! 
+I'm Kaleem.
+I've been building since I was 12.
 
-Welcome to this website about moi.
+Here is a short timeline of what I've done:
+- Age 12
+	- Taught myself HTML, CSS, and JavaScript with Codecademy.com.
