@@ -13,10 +13,9 @@ npx quartz build
 npx wrangler deploy
 
 # 4. Sync with GitHub (Backup)
-# Renamed branch to 'main' - adjust to 'master' if you didn't rename it
 git add .
 git commit -m "Site update: $(date)"
-git push origin main
+git push origin master
 
 # 5. Restore Workflow
 # Put the symlink back so Obsidian works as usual
