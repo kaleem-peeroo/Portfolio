@@ -5,8 +5,8 @@ I'm **Kaleem**.
 I've been building since I was 12.
 
 This is an Obsidian vault dedicated to explaining everything necessary about me:
-- [[0_portfolio/Projects|Projects]]
-- [[0_portfolio/Research|Research]]
-- [[Dotfiles]]
-- [[Blog]]
-- [[Contact]]
+- [Projects](https://kaleempeeroo.com/Projects)
+- [Research](https://kaleempeeroo.com/Research)
+- [Dotfiles](https://kaleempeeroo.com/Dotfiles)
+- [Blog](https://kaleempeeroo.com/Blog)
+- [Contact](https://kaleempeeroo.com/Contact)
