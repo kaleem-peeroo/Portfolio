@@ -1,0 +1,4 @@
+- [[How I transitioned to Vim]]
+- [[Tools that I use everyday]]
+	- [[Tools that I use everyday for data science]]
+- [[How I Remember What I Read]]

@@ -1,0 +1,4 @@
+- import into Read wise Reader
+- annotate in reader
+- sync annotations to obsidian
+- create flash cards to test myself
