@@ -1,3 +1,5 @@
+**This website is a work in progress. Some pages may be empty or just contain short notes.**
+
 Hello! 
 
 I'm **Kaleem**.
