@@ -2,7 +2,7 @@
 title: Projects
 aliases:
   - /Projects
-draft: true
+draft: false
 ---
 
 Here are my projects over time...

@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 ---
 
 - [[How I transitioned to Vim]]

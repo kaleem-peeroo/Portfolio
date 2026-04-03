@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 ---
 
 You can find my dotfiles [here](https://github.com/kaleem-peeroo/dotfiles).

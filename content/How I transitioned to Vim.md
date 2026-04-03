@@ -1,3 +1,7 @@
+---
+draft: true
+---
+
 This is the story of how I transitioned to VIM in the hope that it helps you transition to VIM too. 
 When I first started coding I used good ol' Sublime text. Then in 2018, I moved to good ol' Visual Studio Code and never looked back. I actually looked forward. Forward to VIM which has many benefits though I won't list them here to save us both time.
 

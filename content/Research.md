@@ -1,6 +1,6 @@
 ---
 title: Research
-draft: true
+draft: false
 aliases:
   - /Research
 ---
