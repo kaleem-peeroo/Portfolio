@@ -3,5 +3,5 @@ draft: false
 ---
 
 Email: mail@KaleemPeeroo.com
-LinkedIn: linkedin.com/in/kaleem-peeroo/
-GitHub: github.com/kaleem-peeroo/
+LinkedIn: [kaleem-peeroo](https://www.linkedin.com/in/kaleem-peeroo/)
+GitHub: [kaleem-peeroo](https://github.com/kaleem-peeroo/)
