@@ -40,6 +40,8 @@ My projects can be broken down into:
 	- I build an RPG using RPG maker in college
 
 # 4. System Apps
+- `AutoPerf`: tool for automated performance testing of data distribution service 
+- `CDF Comparer`: tool for automated statistical analysis by comparing eCDFs across different percentile ranges.
 
 
 # 5. Data Science
