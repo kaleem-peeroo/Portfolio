@@ -45,3 +45,4 @@ My projects can be broken down into:
 
 
 # 5. Data Science
+- `DDS Performance Prediction via Quantile Regression`: full data science pipeline from data cleaning all the way through to model automated tuning (with Optuna) and monitoring through use of linear regression, random forest, xgboost, and neural networks.

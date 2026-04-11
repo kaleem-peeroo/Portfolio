@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 ---
 
 This is the story of how I transitioned to VIM in the hope that it helps you transition to VIM too. 
@@ -9,21 +9,12 @@ The problem was that the transition to VIM was a big step...and big first steps 
 
 That's when I decided to use Neovim but I didn't know where to start and which config to use. There were so many options. After browsing a few Reddit posts and talking to a friend who used Neovim I ended up picking LazyVim. I think of myself as lazy. Others may call it efficient. Maybe that's why I chose LazyVim. Regardless, it was nice. I was surprised at how well the application mimicked an IDE like VSC. You could browse files, create panes for terminal usage, see debug output, etc. It was nice. For a while. There were so many plugins and I didn't know what each plugin did. It took too much time going through each plugin, learning what it does, how it works, and how to configure it.
 
-So, I decided to do what probably every NeoVim user has done numerous times. I redid my config. I removed everything related to LazyVim and just created a single config file. I only added the plugins that I understood and wanted to use. One of the first ones I added was Oil.
+So, I decided to do what probably every NeoVim user has done numerous times. I redid my config. I removed everything related to LazyVim and just created a single config file. I only added the plugins that I understood and wanted to use. One of the first ones I added was Oil. Oil lets you treat your filesystem as if it were a vim buffer. As if your list of files was the content of a text file which lets you copy paste lines (files), delete them, and the other useful file system stuff like navigation and renaming. 
 
+That was also the time when I discovered Language Server Protocols (LSPs) which blew my mind. I love finding out how things work and looking behind the scenes at things and I found out that LSPs are a big part of IDEs like VSC. Proof that using nvim indirectly teaches you about what's happening under the hood which strengthens your overall systems knowledge. I installed a plugin called `mason.nvim` which made it so easy to install LSPs and highly recommend it to anyone using nvim. As I added more and more plugins that I understood and appreciated, my config file became longer and longer. At the time my config was all just a single file. It got messy. Very long and messy.
 
-# Timeline
-- I used to use sublime then moved to VSC in 2018
-- I started by using vim motions in VSC around March 2023
-- I then moved to neovim with Lazy config
-- I then moved to empty config and added my own plugins
-- I then rewrite the plugins to be in individual files so that it easier to keep all configs for each plugin contained and atomic
-- I can't think back to how I used to navigate without vim
-- I used to use combination of shift control and arrow keys which seem so bizarre now
+So, I decided to do what probably every NeoVim user has done numerous times. I redid my config. I split the file up into a plugins folder and put each plugin into its own single file. This meant it was a lot easier to find the plugin and reconfigure it when I had to. To this day it's remained like this and I think it's the best way to organise your Neovim plugins. 
 
-# Why VIM?
-- Faster.
-	- How much faster?
-- Easier shortcuts
-	- I loved shortcuts in VSC - but lots of combinations of ctrl, shift, and alt
-	- VIM has intuitive motions that are easier to trigger
+So what have I learnt and what could you learn? Start learning vim motions by enabling vim mode in your IDE. Also try out `vimtutor`, an application that's installed with vim. Once you're familiar with the motions you can move to NeoVim. I'd recommend starting with no plugins and adding them one by one. 
+
+Over time you'll have a custom list of plugins that are specific for you and great for you. I think that's the best part, Neovim evolves into the best tool for you. You just have to invest into it. I have, and I believe that my investment has paid off.
