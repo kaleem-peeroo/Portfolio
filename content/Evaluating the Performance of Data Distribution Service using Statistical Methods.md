@@ -1,0 +1,34 @@
+- Problem: 
+	- need to evaluate performance of DDS to better understand it
+	- not easy to get performance of expensive configurations
+	- the longer you run the performance test the better
+	- too many configurations to look at
+- typically people evaluate a specific scenario
+- can we collect a lot of data and use Statistical Methods to analyse it?
+- can we look at how specific parameters impact the performance? 
+- can we look at how interactions between parameters affect the performance?
+
+Context:
+- DDS used publish-subscribe
+- you have pubs that send data on a topic
+- subs received data on a topic
+- pubs and subs can be added and removed in real-time
+- there are 2 types of parameters for configuring communication
+	- qos
+		- defined in the DDS spec
+		- reliability: 
+			- reliable: wait for ack before sending next message
+			- best effort: just send. Don't care about ack
+		- durability:
+			- 0: don't send or store previously sent messages
+			- 1: send previously sent messages to new subs
+			- 2: use main memory to store previously sent messages and resend to new subs
+			- 3: use secondary memory to store previously sent messages and resend to new subs
+	- non-qos
+		- general parameters not specified in DDS spec but still generally applicable to networks
+		- data lenth: size of messages
+		- multicast:
+			- unicast: send 1 messages n times to n subs
+			- multicast: send n messages 1 time to n subs
+		- sub count
+		- pub count

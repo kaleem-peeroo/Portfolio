@@ -1,0 +1,10 @@
+- problem
+	- people have to set up DDS systems
+	- their scenarios may contain parameter choices e.g. X scenario can only use 7 pubs and 3 subs and send 100B of data
+		- what about other parameters values? 
+		- which values would lead to best performance? 
+		- can't know until you try
+			- meaning you have to set up the system then run performance test
+			- most of the time this is expensive, especially for bigger and more expensive configurations
+- solution: 
+	- gather a few data points, train a model to predict for all other data

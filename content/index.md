@@ -13,6 +13,7 @@ I've been writing code and building things since I was 12. It all started when I
 Below you can find out more about me:
 - [[Projects]]
 - [[Research]]
+	- [[Publications]]
 - [[Dotfiles]]
 - [[Blog]]
 - [[Contact]]
