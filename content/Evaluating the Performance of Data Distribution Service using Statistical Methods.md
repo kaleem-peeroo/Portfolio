@@ -32,3 +32,14 @@ Context:
 			- multicast: send n messages 1 time to n subs
 		- sub count
 		- pub count
+
+- solution
+	- run performance tests on various configurations for different parameters values
+	- gather lots of data
+	- analyse the data
+		-  isolate specific parameters
+			- compare their values using ecdfs
+			- find most performant value
+		- analyse which paramter values often are most performant
+		- analyse interactions with other parameter values
+			- which combinations of parameters are more performant than others?

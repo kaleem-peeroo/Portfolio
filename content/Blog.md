@@ -7,4 +7,8 @@ I've learnt a lot over the years of building and breaking things and most (if no
 - [[How I transitioned to Vim]]
 - [[Tools that I use everyday]]
 	- [[Tools that I use everyday for data science]]
+	- [[Tools that I use to do a literature review]]
 - [[How I Remember What I Read]]
+- [[My Data Visualisation Principles]]
+- [[How I Read Papers]]
+- [[How I Write Papers]]

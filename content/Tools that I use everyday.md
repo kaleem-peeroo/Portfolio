@@ -6,4 +6,6 @@
 - tmux
 - Kitty
 
-[[Tools that I use everyday for data science]]
+See also:
+- [[Tools that I use everyday for data science]]
+- [[Tools that I use to do a literature review]]

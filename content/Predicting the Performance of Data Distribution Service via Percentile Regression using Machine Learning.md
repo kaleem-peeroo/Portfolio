@@ -8,3 +8,5 @@
 			- most of the time this is expensive, especially for bigger and more expensive configurations
 - solution: 
 	- gather a few data points, train a model to predict for all other data
+	- how to simulate extrapolation?
+		- split the data into "inside" and "outside" parameter values and treat outside as extrapolation
