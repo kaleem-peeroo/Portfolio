@@ -1,0 +1,5 @@
+- do at least 10 mins keybr everyday
+- test on monkey type before and after practice
+- slow down
+- Aim for 100% accuracy, not high speed
+- if you miss a day just continue the next day
