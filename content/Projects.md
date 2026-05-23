@@ -41,7 +41,7 @@ My projects can be temporally broken down into:
 	- I build an RPG using RPG maker in college
 
 # 4. System Apps
-- [AutoPerf](https://github.com/kaleem-peeroo/AutoPerf): tool for automated performance testing of data distribution service 
+- [[0_portfolio/AutoPerf|AutoPerf]]
 - [CDF Comparer](https://github.com/kaleem-peeroo/PhD-Parameter-Analysis-Tool): tool for automated statistical analysis by comparing eCDFs across different percentile ranges.
 
 

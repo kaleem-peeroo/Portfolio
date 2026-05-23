@@ -1,5 +1,7 @@
 ---
 draft: false
+last_modified: 2026-04-11
+published_on: 2026-04-11
 ---
 
 This is the story of how I transitioned to VIM in the hope that it helps you transition to VIM too. 

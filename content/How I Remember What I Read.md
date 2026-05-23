@@ -1,3 +1,8 @@
+---
+last_modified: 2026-05-14
+published_on: 2026-05-14
+---
+
 For a long time I would read non-fiction books and a few months later I would remember maybe 2 or 3 things from what I read. It seemed like a waste of time. All that time spent reading and not remembering everything I wanted to remember. That system was not working. I couldn't rely on my brain to absorb and store 100% of what I read. Even 50% of what I read. I had to come up with a new system. 
 
 I searched for the most effective methods to remember things and found 2 keys things: flash cards and spaced repetition. These were the fundamental blocks for my new system. I've used flash cards and spaced repetition before, during my undergrad to study various computer science topics. It worked well back then so I assumed it would work well now. So I wanted to find a way to create this new system. 
