@@ -15,5 +15,12 @@ It starts many years ago. I was in my early teens, I think 13 or 14, and I wante
 - when you get a word wrong - delete the whole word and rewrite it using ctrl+backspace or option+backspace
 - if you miss a day just continue the next day
 - I used to practice this many years ago but recently I've realised that my typing has gotten worse. Slower and more mistakes which makes it even slower.
+- keybr settings:
+	- target typing speed: 100wpm
+	- unlock a next key only when the previous keys are also above the target speed
+	- prefer natural words
+	- repeat each word = 2
+	- add words to lessons = about 40%
+	- daily goal = 10 minutes
 
 monkeytype public profile: https://monkeytype.com/profile/DrBlitzer
