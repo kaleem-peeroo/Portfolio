@@ -20,5 +20,5 @@ Below you can find out more about me:
 - [[Blog]]
 - [[Contact]]
 
-**This website is from AI-generated content.**
+**This website is free from AI-generated content.**
 *While I do use GenAI for my work in general, I believe writing is a skill that I am working on - in this pursuit, this website is written entirely by me, no GenAI involved.*
