@@ -1,26 +1,64 @@
 #!/bin/bash
+set -euo pipefail
+
+# --- Content path resolution ---
+# Precedence: CLI arg > .portfolio-path file > PORTFOLIO_PATH env var
+CONTENT_SRC="${1:-}"
+
+if [ -z "$CONTENT_SRC" ] && [ -f ".portfolio-path" ]; then
+  CONTENT_SRC="$(cat .portfolio-path | xargs)"
+fi
+
+if [ -z "$CONTENT_SRC" ]; then
+  CONTENT_SRC="${PORTFOLIO_PATH:-}"
+fi
+
+if [ -z "$CONTENT_SRC" ]; then
+  echo "Error: No content path provided."
+  echo ""
+  echo "Provide the path in one of these ways:"
+  echo "  1. Pass as argument:               $0 ~/vault 2.0/0_portfolio"
+  echo "  2. Create .portfolio-path file:    echo '~/vault 2.0/0_portfolio' > .portfolio-path"
+  echo "  3. Set PORTFOLIO_PATH env var:      export PORTFOLIO_PATH='~/vault 2.0/0_portfolio'"
+  exit 1
+fi
+
+# Expand ~ if present (bash built-in)
+CONTENT_SRC="${CONTENT_SRC/#\~/$HOME}"
+
+if [ ! -d "$CONTENT_SRC" ]; then
+  echo "Error: Content path '$CONTENT_SRC' is not a directory"
+  exit 1
+fi
+
+echo "📁 Content source: $CONTENT_SRC"
+
 # 1. Prepare Content
-# Remove the symlink and copy actual files for the build
+echo "📦 Copying content..."
 rm -rf content
-cp -r ~/vault\ 2.0/0_portfolio content
+cp -r "$CONTENT_SRC" content
 
 # 2. Build the Site
-# This generates the HTML in the /public folder
+echo "🔨 Building site..."
 npx quartz build
 
 # 3. Deploy to Cloudflare
-# This pushes the /public folder to your domain immediately
+echo "☁️  Deploying to Cloudflare..."
 npx wrangler deploy
 
 # 4. Sync with GitHub (Backup)
+echo "📤 Committing and pushing to GitHub..."
 git add .
-git commit -m "Site update: $(date)"
-git push origin master
+if git commit -m "Site update: $(date)"; then
+  git push origin master
+else
+  echo "(nothing new to commit)"
+fi
 
-# 5. Restore Workflow
-# Put the symlink back so Obsidian works as usual
+# 5. Restore symlink
+echo "🔗 Restoring symlink..."
 rm -rf content
-ln -s ~/vault\ 2.0/0_portfolio content
+ln -s "$CONTENT_SRC" content
 
 echo "---------------------------------------"
 echo "✅ Deployment complete!"
