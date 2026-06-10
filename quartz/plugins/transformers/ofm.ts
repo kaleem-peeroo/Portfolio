@@ -13,6 +13,7 @@ import { ReplaceFunction, findAndReplace as mdastFindReplace } from "mdast-util-
 import rehypeRaw from "rehype-raw"
 import { SKIP, visit } from "unist-util-visit"
 import path from "path"
+import fs from "fs"
 import { splitAnchor } from "../../util/path"
 import { JSResource, CSSResource } from "../../util/resources"
 // @ts-ignore
@@ -211,6 +212,34 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options>>
     markdownPlugins(ctx) {
       const plugins: PluggableList = []
 
+      // Build filename→slugified-path lookup for resolving Obsidian attachment links
+      // Obsidian stores images in attachments/ but wikilinks use bare filenames
+      const contentDir = ctx.argv.directory
+      const assetLookup = new Map<string, string>()
+      ;(function scanForAssets(dir: string, prefix: string) {
+        let entries
+        try {
+          entries = fs.readdirSync(dir, { withFileTypes: true })
+        } catch {
+          return
+        }
+        for (const entry of entries) {
+          if (entry.name.startsWith(".")) continue
+          const fullPath = path.join(dir, entry.name)
+          if (entry.isDirectory()) {
+            scanForAssets(fullPath, path.join(prefix, entry.name))
+          } else if (entry.isFile()) {
+            if (entry.name.endsWith(".md")) continue
+            const relPath = prefix ? path.join(prefix, entry.name) : entry.name
+            const sluggedFull = slugifyFilePath(relPath as FilePath)
+            const bareSlug = slugifyFilePath(entry.name as FilePath)
+            if (!assetLookup.has(bareSlug)) {
+              assetLookup.set(bareSlug, sluggedFull)
+            }
+          }
+        }
+      })(contentDir, "")
+
       // regex replacements
       plugins.push(() => {
         return (tree: Root, file) => {
@@ -229,7 +258,9 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options>>
                 // embed cases
                 if (value.startsWith("!")) {
                   const ext: string = path.extname(fp).toLowerCase()
-                  const url = slugifyFilePath(fp as FilePath)
+                  const baseUrl = slugifyFilePath(fp as FilePath)
+                  // Resolve attachment subdirectories (e.g., attachments/image.png)
+                  const url = assetLookup.get(baseUrl) ?? baseUrl
                   if ([".png", ".jpg", ".jpeg", ".gif", ".bmp", ".svg", ".webp"].includes(ext)) {
                     const match = wikilinkImageEmbedRegex.exec(alias ?? "")
                     const alt = match?.groups?.alt ?? ""
