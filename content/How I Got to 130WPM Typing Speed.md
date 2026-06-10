@@ -10,12 +10,12 @@ It starts many years ago. I was in my early teens, I think 13 or 14, and I wante
 
 There are now free websites out there that help teach you how to touch type by giving you typing drills. These systems enforce the use of all fingers for specific fingers which build up your muscle memory. The one I use these days is [keybr.com](https://www.keybr.com/). It'll start you off with (what seems like) random combinations of letters which get you more comfortable with the finger placements. After a lot of practice you can then move on to words. I personally use keybr with words and here is the daily routine I use to practice my typing to improve it.
 
-![[Pasted image 20260609174848.png]]
+![[My WPM Distribution from monkeytype.png]]
 *My distribution of typing speeds as recorded via MonkeyType before and after practicing on keybr.*
 
 I start by "warming up" with some [MonkeyType](https://monkeytype.com/) 30-second tests. I usually do about 3. The first is just a warm up, the second is where I slow down and aim to get 100%, and the third is where I speed up while keeping accuracy as high as I can. After these 3 runs I then start on keybr. I make sure to do at least 10 minutes of keybr everyday. I then follow this up with a few more runs of MonkeyType. Over the months and after reading many Reddit posts and various articles, I have configured my keybr settings to maximise typing improvement/learning. Here is a breakdown of the settings that are not default and why:
 
-![[Pasted image 20260609175316.png]]
+![[my top typing speed from keybr.png]]
 *My top typing speed according to keybr is 127.6wpm and beats 99.84% of all other people.*
 
 **Target Typing Speed: 100wpm + "unlock next key only when the previous keys are also above the target speed"**
