@@ -1,9 +1,12 @@
 #!/usr/bin/env node
 /**
- * Publish a markdown blog post to Substack.
+ * Create a Substack draft from a markdown post.
+ *
+ * Default: creates a draft (no email sent). Add --publish to send to subscribers.
  *
  * Usage:
- *   ./scripts/publish-to-substack.mjs content/How-I-Transitioned-to-Vim.md
+ *   ./scripts/publish-to-substack.mjs "content/How I transitioned to Vim.md"
+ *   ./scripts/publish-to-substack.mjs --publish "content/How I Got to 130WPM Typing Speed.md"
  *
  * Auth (get from browser cookies after logging into substack.com):
  *   Application → Cookies → substack.com → substack.sid
@@ -278,18 +281,18 @@ function mdastNodeToPM(node) {
 
 async function main() {
   const args = process.argv.slice(2)
-  const isDraft = args.includes("--draft")
+  const shouldPublish = args.includes("--publish")
   const fileArg = args.find((a) => !a.startsWith("--"))
   if (!fileArg) {
     console.log(`
-Usage:  ./scripts/publish-to-substack.mjs [--draft] <markdown-file>
+Usage:  ./scripts/publish-to-substack.mjs [--publish] <markdown-file>
 
 Flags:
-  --draft    Create draft only (don't publish or send email)
+  --publish  Publish immediately and send email (default is draft-only)
 
 Examples:
-  ./scripts/publish-to-substack.mjs --draft "content/How I transitioned to Vim.md"
-  ./scripts/publish-to-substack.mjs "content/How I Got to 130WPM Typing Speed.md"
+  ./scripts/publish-to-substack.mjs "content/How I Read Papers.md"
+  ./scripts/publish-to-substack.mjs --publish "content/How I Got to 130WPM Typing Speed.md"
 
 Auth (set one of):
   export SUBSTACK_SID="..." && export SUBSTACK_PUB="kaleemp.substack.com"
@@ -352,7 +355,7 @@ Get SUBSTACK_SID from browser: substack.com → DevTools → Application → Coo
   const outPath = path.join(REPO_ROOT, ".last-substack-publish.json")
   const editUrl = `https://${cfg.pub}/publish/${draftId}`
 
-  if (isDraft) {
+  if (!shouldPublish) {
     await writeFile(outPath, JSON.stringify({ title, draftId, file: filePath, url: editUrl, status: "draft" }, null, 2))
     console.log(`\n✅ Draft saved: ${editUrl}`)
     console.log(`   Images: ${resolvedImages.length} uploaded`)
