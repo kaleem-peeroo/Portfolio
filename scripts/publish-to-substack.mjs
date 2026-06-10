@@ -277,14 +277,19 @@ function mdastNodeToPM(node) {
 // ─── Main ───────────────────────────────────────────────────────────────────────
 
 async function main() {
-  const fileArg = process.argv[2]
+  const args = process.argv.slice(2)
+  const isDraft = args.includes("--draft")
+  const fileArg = args.find((a) => !a.startsWith("--"))
   if (!fileArg) {
     console.log(`
-Usage:  ./scripts/publish-to-substack.mjs <markdown-file>
+Usage:  ./scripts/publish-to-substack.mjs [--draft] <markdown-file>
+
+Flags:
+  --draft    Create draft only (don't publish or send email)
 
 Examples:
-  ./scripts/publish-to-substack.mjs "content/How I transitioned to Vim.md"
-  ./scripts/publish-to-substack.mjs content/Blog.md
+  ./scripts/publish-to-substack.mjs --draft "content/How I transitioned to Vim.md"
+  ./scripts/publish-to-substack.mjs "content/How I Got to 130WPM Typing Speed.md"
 
 Auth (set one of):
   export SUBSTACK_SID="..." && export SUBSTACK_PUB="kaleemp.substack.com"
@@ -344,6 +349,18 @@ Get SUBSTACK_SID from browser: substack.com → DevTools → Application → Coo
   const draftId = draft.id || draft.draft_id
   console.log(`  ✓ Draft created: ${draftId}`)
 
+  const outPath = path.join(REPO_ROOT, ".last-substack-publish.json")
+  const editUrl = `https://${cfg.pub}/publish/${draftId}`
+
+  if (isDraft) {
+    await writeFile(outPath, JSON.stringify({ title, draftId, file: filePath, url: editUrl, status: "draft" }, null, 2))
+    console.log(`\n✅ Draft saved: ${editUrl}`)
+    console.log(`   Images: ${resolvedImages.length} uploaded`)
+    console.log(`   Edit before publishing at the link above.`)
+    console.log(`   Info → .last-substack-publish.json\n`)
+    return
+  }
+
   console.log(`\n🚀 Publishing...`)
   await substackFetch(`/drafts/${draftId}/publish`, {
     method: "POST",
@@ -353,11 +370,10 @@ Get SUBSTACK_SID from browser: substack.com → DevTools → Application → Coo
     }),
   })
 
-  const outPath = path.join(REPO_ROOT, ".last-substack-publish.json")
-  const url = `https://${cfg.pub}/p/${draftId}`
-  await writeFile(outPath, JSON.stringify({ title, draftId, file: filePath, url }, null, 2))
+  const postUrl = `https://${cfg.pub}/p/${draftId}`
+  await writeFile(outPath, JSON.stringify({ title, draftId, file: filePath, url: postUrl, status: "published" }, null, 2))
 
-  console.log(`\n✅ Published: ${url}`)
+  console.log(`\n✅ Published: ${postUrl}`)
   console.log(`   Images: ${resolvedImages.length} uploaded`)
   console.log(`   Info → .last-substack-publish.json\n`)
 }
