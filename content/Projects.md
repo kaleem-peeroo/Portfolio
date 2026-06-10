@@ -42,8 +42,7 @@ My projects can be temporally broken down into:
 
 # 4. System Apps
 - [[0_portfolio/AutoPerf|AutoPerf]]
-- [CDF Comparer](https://github.com/kaleem-peeroo/PhD-Parameter-Analysis-Tool): tool for automated statistical analysis by comparing eCDFs across different percentile ranges.
-
+- [[STOE]]
 
 # 5. Data Science
 - `DDS Performance Prediction via Quantile Regression`: full data science pipeline from data cleaning all the way through to automated model tuning (with Optuna) and monitoring through use of linear regression, random forest, xgboost, and neural networks.
