@@ -1,6 +1,6 @@
-- MIDDLEWARE 2025: [PANDAS: Peer-to-peer, Adaptive Networking Allowing Data Availability Sampling within Ethereum Consensus Timebounds](https://doi.org/10.1145/3721462.3770769)
-- EDCC 2024: [[Machine Learning for Performance Prediction of Data Distribution Service (DDS) Paper]]
-- CGVC 2024: [Best Poster Winner](https://cgvc.org.uk/CGVC2024/award.html): [Visualising the Impact of High-dimensional Configuration Parameters on the Performance of Data Distribution Service](https://openaccess.city.ac.uk/id/eprint/33745/1/CGVC%202024%20Poster%20-%20Kaleem%20Peeroo.pdf)
-- ARXIV 2023: [Data Availability Sampling in Ethereum: Analysis of P2P Networking Requirements](https://doi.org/10.48550/arXiv.2306.11456)
-- ARXIV 2023: [A Survey on Experimental Performance Evaluation of Data Distribution Service (DDS) Implementations](https://doi.org/10.48550/arXiv.2310.16630)
-- EDCC 2022: [Exploring the Effects of Multicast Communication on DDS Performance](https://doi.org/10.48550/arXiv.2209.09001)
+- [[My MIDDLEWARE 2025 Publication|MIDDLEWARE 2025]]
+- [[MY EDCC 2024 Publication|EDCC 2024]]
+- [[MY CGVC 2024 Publication|CGVC 2024]]
+- [[MY ARXIV 2023 Publication on Data Availability Sampling|ARXIV 2023 - Data Availability Sampling]]
+- [[MY ARXIV 2023 Publication on Data Distribution Service|ARXIV 2023 - Data Distribution Service]]
+- [[MY EDCC 2022 Publication|EDCC 2022]]

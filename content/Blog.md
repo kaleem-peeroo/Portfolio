@@ -12,3 +12,4 @@ I've learnt a lot over the years of building and breaking things and most (if no
 - [[How I Write Papers]]
 - [[My Principles for Weight Training]]
 - [[My Pi Setup]]
+- [[My Thoughts on LLMs]]

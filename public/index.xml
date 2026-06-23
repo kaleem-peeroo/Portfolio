@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+      <title>Kaleem Peeroo</title>
+      <link>https://kaleempeeroo.com</link>
+      <description>Last 10 notes on Kaleem Peeroo</description>
+      <generator>Quartz -- quartz.jzhao.xyz</generator>
+      <item>
+    <title>MY CGVC 2024 Publication</title>
+    <link>https://kaleempeeroo.com/MY-CGVC-2024-Publication</link>
+    <guid>https://kaleempeeroo.com/MY-CGVC-2024-Publication</guid>
+    <description><![CDATA[  CGVC 2024: Best Poster Winner: Visualising the Impact of High-dimensional Configuration Parameters on the Performance of Data Distribution Service Abstract Data Distribution Service (DDS) is a specification for middleware in real-time and mission-critical systems such as energy management systems a... ]]></description>
+    <pubDate>Tue, 23 Jun 2026 18:39:02 GMT</pubDate>
+  </item><item>
+    <title>My Thoughts on LLMs</title>
+    <link>https://kaleempeeroo.com/My-Thoughts-on-LLMs</link>
+    <guid>https://kaleempeeroo.com/My-Thoughts-on-LLMs</guid>
+    <description><![CDATA[  great for creating things from scratch not so great for editing large codebases very expensive when you want to make a change to a large codebase . ]]></description>
+    <pubDate>Tue, 23 Jun 2026 18:39:02 GMT</pubDate>
+  </item><item>
+    <title>MY ARXIV 2023 Publication on Data Distribution Service</title>
+    <link>https://kaleempeeroo.com/MY-ARXIV-2023-Publication-on-Data-Distribution-Service</link>
+    <guid>https://kaleempeeroo.com/MY-ARXIV-2023-Publication-on-Data-Distribution-Service</guid>
+    <description><![CDATA[  ARXIV 2023: A Survey on Experimental Performance Evaluation of Data Distribution Service (DDS) Implementations Abstract The Data Distribution Service (DDS) is a widely used communication specification for real-time mission-critical systems that follow the principles of publish-subscribe middleware. ]]></description>
+    <pubDate>Tue, 23 Jun 2026 18:39:02 GMT</pubDate>
+  </item><item>
+    <title>MY EDCC 2024 Publication</title>
+    <link>https://kaleempeeroo.com/MY-EDCC-2024-Publication</link>
+    <guid>https://kaleempeeroo.com/MY-EDCC-2024-Publication</guid>
+    <description><![CDATA[  EDCC 2024: Machine Learning for Performance Prediction of Data Distribution Service (DDS) Paper Abstract Networking middleware following the Data Distribution Service (DDS) specification is used in real-time mission-critical systems such as autonomous vehicles, energy management systems, and air tr... ]]></description>
+    <pubDate>Tue, 23 Jun 2026 18:39:02 GMT</pubDate>
+  </item><item>
+    <title>Stochastic Ordering for eCDFs (STOE)</title>
+    <link>https://kaleempeeroo.com/Stochastic-Ordering-for-eCDFs-(STOE)</link>
+    <guid>https://kaleempeeroo.com/Stochastic-Ordering-for-eCDFs-(STOE)</guid>
+    <description><![CDATA[ Stochastic Ordering for eCDFs GitHub Link Intro A tool for automated statistical analysis by comparing eCDFs across different percentile ranges and looking for separation between confidence intervals. ]]></description>
+    <pubDate>Tue, 23 Jun 2026 18:39:02 GMT</pubDate>
+  </item><item>
+    <title>Data Distribution Service Performance Prediction via Quantile Regression</title>
+    <link>https://kaleempeeroo.com/Data-Distribution-Service-Performance-Prediction-via-Quantile-Regression</link>
+    <guid>https://kaleempeeroo.com/Data-Distribution-Service-Performance-Prediction-via-Quantile-Regression</guid>
+    <description><![CDATA[ Intro full data science pipeline from data cleaning all the way through to automated model tuning (with Optuna) and monitoring through use of linear regression, random forest, xgboost, and neural networks. ]]></description>
+    <pubDate>Tue, 23 Jun 2026 18:39:02 GMT</pubDate>
+  </item><item>
+    <title>MY EDCC 2022 Publication</title>
+    <link>https://kaleempeeroo.com/MY-EDCC-2022-Publication</link>
+    <guid>https://kaleempeeroo.com/MY-EDCC-2022-Publication</guid>
+    <description><![CDATA[  EDCC 2022: Exploring the Effects of Multicast Communication on DDS Performance Abstract The Data Distribution Service (DDS) is an Object Management Group (OMG) standard for high-performance and real-time systems. ]]></description>
+    <pubDate>Tue, 23 Jun 2026 18:39:02 GMT</pubDate>
+  </item><item>
+    <title>MY ARXIV 2023 Publication on Data Availability Sampling</title>
+    <link>https://kaleempeeroo.com/MY-ARXIV-2023-Publication-on-Data-Availability-Sampling</link>
+    <guid>https://kaleempeeroo.com/MY-ARXIV-2023-Publication-on-Data-Availability-Sampling</guid>
+    <description><![CDATA[  ARXIV 2023: Data Availability Sampling in Ethereum: Analysis of P2P Networking Requirements Abstract Despite their increasing popularity, blockchains still suffer from severe scalability limitations. ]]></description>
+    <pubDate>Tue, 23 Jun 2026 18:39:02 GMT</pubDate>
+  </item><item>
+    <title>My MIDDLEWARE 2025 Publication</title>
+    <link>https://kaleempeeroo.com/My-MIDDLEWARE-2025-Publication</link>
+    <guid>https://kaleempeeroo.com/My-MIDDLEWARE-2025-Publication</guid>
+    <description><![CDATA[  MIDDLEWARE 2025: PANDAS: Peer-to-peer, Adaptive Networking Allowing Data Availability Sampling within Ethereum Consensus Timebounds Abstract Layer-2 protocols such as rollups can help address Ethereum’s throughput limits. ]]></description>
+    <pubDate>Tue, 23 Jun 2026 18:39:02 GMT</pubDate>
+  </item><item>
+    <title>AutoPerf</title>
+    <link>https://kaleempeeroo.com/AutoPerf</link>
+    <guid>https://kaleempeeroo.com/AutoPerf</guid>
+    <description><![CDATA[ Intro AutoPerf: tool for automated performance testing of data distribution service. Built entirely in Python all by myself. ]]></description>
+    <pubDate>Wed, 10 Jun 2026 17:06:35 GMT</pubDate>
+  </item>
+    </channel>
+  </rss>

@@ -1,0 +1,6 @@
+- MIDDLEWARE 2025: [PANDAS: Peer-to-peer, Adaptive Networking Allowing Data Availability Sampling within Ethereum Consensus Timebounds](https://doi.org/10.1145/3721462.3770769)
+
+# Abstract
+Layer-2 protocols such as rollups can help address Ethereum's throughput limits. An efficient data availability layer is key for layer-2 support in Ethereum, but broadcast methods do not scale. A promising approach is the selective distribution of layer-2 data and its verification by data availability sampling (DAS). Integrating DAS with Ethereum consensus is, however, a challenge, as data must be shared and sampled within 4 seconds of each consensus slot.
+
+We propose PANDAS, a practical approach to integrating DAS with Ethereum without modifying Ethereum's core protocols. PANDAS disseminates layer-2 data and samples its availability using lightweight, direct exchanges. Its design accounts for message loss, node failures, and unresponsive participants. Our evaluation in a 1,000-node cluster and simulations for up to 20,000 peers show that PANDAS allows layer-2 data dissemination and sampling under planetary-scale latencies within the 4-second deadline.
