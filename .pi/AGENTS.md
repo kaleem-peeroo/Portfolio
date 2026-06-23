@@ -1,220 +1,134 @@
-## 1. Project Overview
+# Portfolio — Kaleem Peeroo
 
-**Portfolio** — Kaleem Peeroo's personal website / digital garden at [kaleempeeroo.com](https://kaleempeeroo.com). Built with **Quartz v4.5.2** (OSS SSG by jackyzha0), deployed to **Cloudflare Workers**. Content authored in external Obsidian vault, synced via deploy script.
+## Project Overview
 
-### Tech Stack
+Personal portfolio / digital garden at [kaleempeeroo.com](https://kaleempeeroo.com). Built on **Quartz v4.5.2** (jzhao.xyz SSG) — converts Markdown notes from an Obsidian vault into a browsable, searchable static site with graph view, backlinks, TOC, dark mode, RSS.
 
-| Layer | Choice |
-|-------|--------|
-| Runtime | Node 22 (`>=22`, pinned `22.16.0`) |
-| Language | TypeScript 5.9 (strict, `noUnusedLocals`/`noUnusedParameters`) |
-| UI | Preact (JSX via `jsxImportSource: "preact"`, `react-jsx` transform) |
-| Build | esbuild (custom pipeline) |
-| CSS | SCSS via `esbuild-sass-plugin` + LightningCSS |
-| Markdown | unified + remark + rehype pipeline |
-| Syntax highlighting | Shiki |
-| Math | KaTeX |
-| Search | FlexSearch |
-| Graph viz | d3 + Pixi.js |
-| Icons | Pixi.js + Tween.js |
-| OG images | Satori + Sharp (disabled: `plugin.CustomOgImages()` commented out) |
-| CI | GitHub Actions (upstream-only, none run on fork) |
-| Deploy | Cloudflare Workers (`wrangler.toml`, assets from `./public/`) |
+Hosted on **Cloudflare Workers** — static assets in `public/` deployed via `wrangler deploy`.
 
-### Key Config Files
+**Stack:** TypeScript ≥5.9.3 (strict, ESM) · Preact ^10.28 · SCSS + LightningCSS · esbuild ^0.27.2 · unified/remark/rehype (20+ plugins) · FlexSearch · D3 ^7 · Pixi.js ^8 · Shiki ^1 · KaTeX · Prettier ^3.8 · tsx + Node `--test` runner · Cloudflare Workers
 
-- `package.json` — `@jackyzha0/quartz` v4.5.2, ES module, npm `engine-strict`
-- `tsconfig.json` — strict, Preact JSX, `esnext` module/target, `incremental: true`
-- `quartz.config.ts` — Site title, theme, analytics (GA tag `G-W45E6W22LM`), plugin pipeline
-- `quartz.layout.ts` — Page layout: shared components, content layout, list layout
-- `wrangler.toml` — Cloudflare config, maps `./public/` as static assets
-- `.prettierrc` — `printWidth: 100`, `trailingComma: "all"`, `semi: false`, `tabWidth: 2`
+**Fork of:** `jackyzha0/quartz`. Custom `quartz.config.ts` and `quartz.layout.ts` with personal branding, theme, Substack link, Google Analytics (G-W45E6W22LM).
 
-## 2. Directory Structure
+## Directory Structure
+
+| Path | Purpose |
+|------|---------|
+| `content/` | Markdown source files (copied from Obsidian vault at deploy time — ephemeral) |
+| `quartz/` | SSG engine — build pipeline, plugins, components, styles, i18n, CLI |
+| `quartz/components/` | Preact components (page layout, search, graph, backlinks, etc.) |
+| `quartz/plugins/` | Transformers (remark/rehype), Emitters (HTML/RSS/assets), Filters |
+| `quartz/styles/` | SCSS stylesheets (custom + base) |
+| `quartz/util/` | Utility modules (paths, trie, resources, theme) |
+| `public/` | Build output — deployed to Cloudflare |
+| `scripts/` | `publish-to-substack.mjs` (one-off tool) |
+| `docs/` | Upstream Quartz documentation |
+| `.github/workflows/` | CI — gated to upstream repo, **won't run on this fork** |
+
+## Commands
+
+All commands run from project root.
+
+| Command | Action |
+|---------|--------|
+| `npm test` | Run 69 tests via `tsx --test` (~161ms) |
+| `npm run check` | `tsc --noEmit && prettier . --check` |
+| `npm run format` | `prettier . --write` |
+| `npx quartz build` | Build static site to `public/` (419ms, ~50 files) |
+| `npx quartz build --serve` | Dev server with hot reload on `localhost` |
+| `npx quartz build --serve -d docs` | Dev server with docs content |
+| `npx quartz build --bundleInfo` | Build with bundle analysis |
+| `npx wrangler deploy` | Deploy `public/` to Cloudflare Workers |
+| `./deploy.sh` | Full deploy: vault → build → deploy → git commit → restore |
+| `npm run docs` | `npx quartz build --serve -d docs` |
+| `npm run profile` | CPU profile the build |
+
+**No `npm run build` script** — use `npx quartz build` directly.
+
+## Build Pipeline (3-phase)
 
 ```
-Portfolio/
-├── content/             # ~25 Markdown pages (replaced on every deploy)
-│   ├── index.md         # Home page
-│   ├── Blog.md          # Blog listing
-│   ├── Projects.md      # Projects listing
-│   ├── Research.md      # Research page
-│   ├── Publications.md  # Publications
-│   ├── Contact.md       # Contact
-│   └── attachments/     # Images (e.g., typing speed screenshots)
-├── quartz/              # Full Quartz SSG framework (103 .ts, 41 .tsx, 21 .scss)
-│   ├── bootstrap-cli.mjs    # CLI entry point (invoked via `npx quartz`)
-│   ├── build.ts             # Main build orchestrator
-│   ├── cfg.ts               # Config types
-│   ├── worker.ts            # Pooled build worker
-│   ├── cli/                 # CLI arg parsing, handlers
-│   ├── components/          # Preact UI components + inline scripts
-│   ├── plugins/             # Plugin system: transformers/, emitters/, filters/
-│   ├── processors/          # Low-level pipeline: parse, filter, emit
-│   ├── util/                # Utilities: path, file tree, theme, OG, perf
-│   ├── styles/              # Global SCSS (variables, base, custom, syntax)
-│   ├── static/              # Static assets (icon.png)
-│   └── i18n/                # 31 locale files
-├── scripts/
-│   └── publish-to-substack.mjs   # Cross-posts content to Substack
-├── .github/
-│   └── workflows/          # 4 workflows (all upstream-only, none run on fork)
-├── docs/                   # Upstream Quartz documentation mirror
-├── public/                 # Build output (7.1MB, gitignored)
-├── deploy.sh               # Full deploy pipeline
-├── Dockerfile              # node:22-slim multi-stage build
-└── .pi/                    # Pi agent metadata
+[content/*.md] → Parse (transformers) → Filter → Emit (HTML + assets) → [public/]
 ```
 
-## 3. Commands
+1. **Parse** (`quartz/processors/parse.ts`): All transformer plugins run in sequence (frontmatter, syntax highlighting, LaTeX, Obsidian-flavored markdown, GFM, TOC, link crawling, descriptions, hard line breaks)
+2. **Filter** (`quartz/processors/filter.ts`): Removes drafts and ignored content
+3. **Emit** (`quartz/processors/emit.ts`): All emitter plugins write output (ContentPage, folder indexes, tag pages, sitemap, RSS, assets, favicons, aliases, 404)
 
-### Run (local dev)
-```bash
-npx quartz build --serve    # Preview at localhost:8080
-```
+Dev mode uses chokidar file watcher + WebSocket for live reload.
 
-### Build
-```bash
-npx quartz build            # Outputs to ./public/ (7.1MB, 24 input → 41 output files)
-```
-Build verified clean: 0 errors, 0 warnings, ~360ms total.
+## Plugin Architecture
 
-### Test
-```bash
-npm test                    # tsx --test → 6 suites, 69 tests, all pass (263ms)
-```
-3 test files: `quartz/util/fileTrie.test.ts`, `quartz/util/path.test.ts`, `quartz/components/scripts/search.test.ts`.
+Three plugin types in `quartz/plugins/`:
 
-### Lint / TypeCheck
-```bash
-npm run check               # tsc --noEmit && npx prettier . --check
-```
-- `tsc --noEmit`: PASS (0 errors)
-- `prettier --check`: FAIL on 6 files (`.pi/*.md`, `progress.md`, `scripts/publish-to-substack.mjs`)
-- Fix: `npx prettier . --write`
+- **Transformers**: `FrontMatter`, `CreatedModifiedDate`, `SyntaxHighlighting`, `ObsidianFlavoredMarkdown`, `GitHubFlavoredMarkdown`, `TableOfContents`, `CrawlLinks`, `Description`, `Latex`, `HardLineBreaks`
+- **Filters**: `RemoveDrafts`
+- **Emitters**: `AliasRedirects`, `ComponentResources`, `ContentPage`, `FolderPage`, `TagPage`, `ContentIndex` (sitemap + RSS), `Assets`, `Static`, `Favicon`, `NotFoundPage`
 
-### Format
-```bash
-npm run format              # npx prettier . --write
-```
+## Component System (Preact)
 
-### Deploy
-```bash
-./deploy.sh [optional-content-path]
-```
-Full pipeline: copy from Obsidian vault → `npx quartz build` → `npx wrangler deploy` → `git commit/push` → restore vault symlink.
+Layout configured in `quartz.layout.ts` — two component regions (left panel, right panel) per page layout type. Components in `quartz/components/`:
 
-### Profile
-```bash
-npm run profile             # 0x profiler on build
-```
+- **Content pages**: Breadcrumbs, ArticleTitle, ContentMeta, TagList, Search, DarkMode, ReaderMode, Explorer (file tree), TableOfContents, Substack embed, Backlinks
+- **Shared**: Head, Footer (with Substack link)
 
-## 4. Code Style & Conventions
+## Code Style & Conventions
 
-- **TypeScript**: Strict mode, `noUnusedLocals`, `noUnusedParameters`, incremental builds
-- **JSX**: Preact, `react-jsx` transform, `jsxImportSource: "preact"`
-- **Formatting**: Prettier (no semicolons, trailing commas, 100 print width, 2-space tabs)
-- **Imports**: ES module (`"type": "module"` in package.json)
-- **Module resolution**: Node-style (`moduleResolution: "node"`)
-- **SCSS**: Component-scoped `.scss` files in `quartz/components/styles/`, global styles in `quartz/styles/`
-- **No semicolons** in TS/JS (Prettier config)
-- **No React** — uses Preact (smaller bundle, same API surface)
-- **Plugin architecture**: 3 types — Transformer (AST modify), Filter (include/exclude), Emitter (file emit). Defined in `quartz.config.ts` pipeline array.
+- **Preact** JSX — import from `preact`, NOT `react`
+- **TypeScript** strict mode, ESM, `target: ESNext`, `moduleResolution: node`
+- **Formatting**: Prettier — 100 width, 2-space tabs, no semis, trailing commas all
+- **No ESLint** — type checking (`tsc --noEmit`) + prettier are the only quality checks
+- **SCSS** stylesheets — no Tailwind, no CSS-in-JS
+- **`any` type usage** — avoid; `tsconfig.json` has `strict: true`
+- **Node >=22** — `.npmrc` has `engine-strict=true`
 
-## 5. Architecture Notes
+## Testing
 
-### Plugin Pipeline (from `quartz.config.ts`)
-```
-FrontMatter → CreatedModifiedDate → SyntaxHighlighting → ObsidianFlavoredMarkdown
-→ GitHubFlavoredMarkdown → TOC → CrawlLinks → Description → Latex → HardLineBreaks
-→ [Filter: RemoveDrafts]
-→ AliasRedirects → ComponentResources → ContentPage → FolderPage → TagPage
-→ ContentIndex (sitemap + RSS) → Assets → Static → Favicon → NotFoundPage
-```
+- **Runner**: Node.js built-in `node:test` via `tsx --test`
+- **Config**: None — uses Node-native conventions
+- **Locations**:
+  - `quartz/util/path.test.ts` — 17 tests (typeguards, transforms, link strategies, resolveRelative)
+  - `quartz/util/fileTrie.test.ts` — 31 tests (trie data structure operations)
+  - `quartz/components/scripts/search.test.ts` — 21 tests (English/CJK/mixed tokenization)
+- **Total**: 69 tests, all passing, ~161ms runtime
+- **Pattern**: `describe`/`it` from `node:test`, assertions from `node:assert` (or `node:assert/strict`)
 
-### SPA & Client Features
-- **SPA navigation**: micromorph (DOM diffing, no full page loads)
-- **Search**: FlexSearch (client-side full-text)
-- **Graph view**: d3 force layout + Pixi.js WebGL renderer
-- **Popovers**: Preview cards on hover (internal links)
-- **Theme**: CSS custom properties, dark/light toggle
-- **Custom events**: `prenav`, `nav`, `themechange`, `readermodechange` (declared in `globals.d.ts`)
+## Git Workflow
 
-### Deploy Architecture
-```
-Obsidian vault (~/vault 2.0/0_portfolio) → deploy.sh:
-  1. cp content from vault into ./content/
-  2. npx quartz build → ./public/
-  3. npx wrangler deploy → Cloudflare Workers
-  4. git commit + push to origin/master
-  5. symlink ./content/ back to vault
-```
+- **Branch**: Single `master` branch — no feature/hotfix/dev branches
+- **Commit style**: Mix of auto-generated deploy commits (`Site update: Tue 23 Jun 2026 19:39:41 BST`) and manual imperative commits (`fix: resolve Obsidian attachment images...`, `add Substack subscribe form...`)
+- **Deploy flow**: Content copied from vault → build → deploy → `git add && git commit && git push` to master
+- **Remote**: `git@github.com:kaleem-peeroo/Portfolio.git` (SSH)
+- **Dependabot**: Auto-creates short-lived branches for dep updates
 
-### Important Constraints
+## Deploy Pipeline
 
-1. **`content/` is replaced on every deploy** — do not edit content in-repo. Source of truth is the Obsidian vault.
-2. **CI workflows are upstream-only** — all 4 GitHub Actions check `github.repository == 'jackyzha0/quartz'` and won't run on this fork. Deploy is fully manual.
-3. **OG images are disabled** — `plugin.CustomOgImages()` commented out in `quartz.config.ts`.
-4. **No `.portfolio-path` file** on this machine — deploy picks vault path from `$PORTFOLIO_PATH` env or CLI arg.
-5. **Only `master` branch** exists — no feature branches, no PR workflow.
-6. **`deploy.sh` deletes and recreates `content/`** — if interrupted, content can be orphaned.
+`deploy.sh` — 5 steps:
+1. Resolve content source (arg > `.portfolio-path` > `$PORTFOLIO_PATH`)
+2. Remove `content/`, copy from Obsidian vault
+3. `npx quartz build` → `public/`
+4. `npx wrangler deploy` → Cloudflare Workers
+5. `git add . && git commit -m "Site update: ..." && git push` to master
 
-### Key Dependencies
+## Key Configuration Files
 
-| Package | Purpose |
-|---------|---------|
-| pixi.js ^8.15.0 | GPU graph visualization |
-| d3 ^7.9.0 | Force-directed graph layout |
-| flexsearch ^0.8.205 | Client-side full-text search |
-| satori ^0.19.1 | OG image generation (disabled) |
-| sharp ^0.34.5 | Image processing |
-| shiki ^1.26.2 | Syntax highlighting |
-| micromorph ^0.4.5 | SPA page transitions |
-| workerpool ^10.0.1 | Parallel build workers |
-| @tweenjs/tween.js | Animations |
+| File | Purpose |
+|------|---------|
+| `quartz.config.ts` | Site name, URL, GA tag, plugin list, layout config |
+| `quartz.layout.ts` | Left/right sidebar component config per page layout |
+| `tsconfig.json` | Strict TS, Preact JSX, ESNext target |
+| `wrangler.toml` | Cloudflare Workers config (compatibility_date: "2026-03-08") |
+| `.node-version` | Node 22.16.0 |
+| `.npmrc` | `engine-strict=true` |
+| `.prettierrc` | Formatting (100 width, 2 spaces, no semis) |
 
-## 6. Testing
+## Risks & Gotchas
 
-- **Runner**: Node.js built-in `--test` runner via `tsx` (TAP protocol)
-- **Config**: No test config file — `tsx --test` auto-discovers test files
-- **Test files**: 3 files, 6 suites, 69 individual tests
-- **Status**: All 69 pass, 0 failures, 0 skipped (263ms total)
-
-### Test suites:
-1. `search.test.ts` — search encoder (4 tests: English, CJK, mixed, edge cases)
-2. `fileTrie.test.ts` — FileTrie data structure (10 tests: constructor, add, filter, map, entries, etc.)
-3. `path.test.ts` — path utilities (55 tests: typeguards, transforms, link strategies, resolveRelative)
-
-### Running tests
-```bash
-npm test                          # all tests
-tsx --test quartz/util/path.test.ts  # single test file
-```
-
-## 7. Git Workflow
-
-- **Branch**: `master` only (no feature/fix branches, no PRs)
-- **Remote**: `git@github.com:kaleem-peeroo/Portfolio.git`
-- **Total commits**: 50
-
-### Commit style: Imperative mood, lowercase start, informal prefixes
-```
-fix: resolve Obsidian attachment images in subdirectories
-add --draft flag to publish script
-deploy.sh: configurable content path (CLI arg > .portfolio-path file > PORTFOLIO_PATH env var)
-README: new-machine setup steps
-```
-- Prefixes used: `fix:`, `add`, `<file>:`, bare noun
-- No strict conventional commits (`feat:`, scope parens, `!` breaking)
-- 50-80 char one-liners; multi-line body for complex changes
-
-### Automated commits
-About ~19 of last 30 are machine-generated from deploy script:
-```
-Site update: Wed 10 Jun 2026 12:34:24 BST
-```
-
-### Committing
-- Commit directly to `master`
-- Imperative mood, lowercase, prefix when helpful
-- No PRs, no merge commits — pure linear history
+- **No `src/` directory** — Quartz engine lives in `quartz/`
+- **Preact, not React** — `preact-render-to-string` for SSR, NOT `react-dom/server`
+- **CI gated to upstream** — workflows check `github.repository == 'jackyzha0/quartz'` so they **won't run on this fork**. All quality checks must run locally.
+- **No ESLint** — only `tsc --noEmit` + prettier for code quality
+- **No `npm run build`** — use `npx quartz build` directly
+- **Cloudflare Workers** — no Node.js runtime features in worker code
+- **content/ dir is ephemeral** — created/copied at deploy time, not committed (mostly)
+- **Prettier check** will flag `init/` and `.pi/` scratch files — not source code issues

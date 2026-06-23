@@ -37,7 +37,22 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer({
+      filterFn: (node) => {
+        if (node.isFolder) return true
+        const show = [
+          "Projects",
+          "Research",
+          "Publications",
+          "Entrepreneurial Projects",
+          "Public Speaking",
+          "Blog",
+          "Dotfiles",
+          "Contact",
+        ]
+        return show.includes(node.data?.title ?? "")
+      },
+    }),
   ],
   right: [
     Component.DesktopOnly(Component.TableOfContents()),
@@ -61,7 +76,22 @@ export const defaultListPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer({
+      filterFn: (node) => {
+        if (node.isFolder) return true
+        const show = [
+          "Projects",
+          "Research",
+          "Publications",
+          "Entrepreneurial Projects",
+          "Public Speaking",
+          "Blog",
+          "Dotfiles",
+          "Contact",
+        ]
+        return show.includes(node.data?.title ?? "")
+      },
+    }),
   ],
   right: [],
 }
