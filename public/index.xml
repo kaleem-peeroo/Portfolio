@@ -6,65 +6,65 @@
       <description>Last 10 notes on Kaleem Peeroo</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>MY CGVC 2024 Publication</title>
-    <link>https://kaleempeeroo.com/MY-CGVC-2024-Publication</link>
-    <guid>https://kaleempeeroo.com/MY-CGVC-2024-Publication</guid>
-    <description><![CDATA[  CGVC 2024: Best Poster Winner: Visualising the Impact of High-dimensional Configuration Parameters on the Performance of Data Distribution Service Abstract Data Distribution Service (DDS) is a specification for middleware in real-time and mission-critical systems such as energy management systems a... ]]></description>
-    <pubDate>Tue, 23 Jun 2026 18:39:02 GMT</pubDate>
+    <title>AutoPerf</title>
+    <link>https://kaleempeeroo.com/AutoPerf</link>
+    <guid>https://kaleempeeroo.com/AutoPerf</guid>
+    <description><![CDATA[ Intro AutoPerf: tool for automated performance testing of data distribution service. Built entirely in Python all by myself. ]]></description>
+    <pubDate>Tue, 23 Jun 2026 18:39:42 GMT</pubDate>
   </item><item>
-    <title>My Thoughts on LLMs</title>
-    <link>https://kaleempeeroo.com/My-Thoughts-on-LLMs</link>
-    <guid>https://kaleempeeroo.com/My-Thoughts-on-LLMs</guid>
-    <description><![CDATA[  great for creating things from scratch not so great for editing large codebases very expensive when you want to make a change to a large codebase . ]]></description>
-    <pubDate>Tue, 23 Jun 2026 18:39:02 GMT</pubDate>
+    <title>Blog</title>
+    <link>https://kaleempeeroo.com/Blog</link>
+    <guid>https://kaleempeeroo.com/Blog</guid>
+    <description><![CDATA[ I’ve learnt a lot over the years of building and breaking things and most (if not all) of the time, doing something for the first time always took a long time because you end up spending a lot of time figuring things out. ]]></description>
+    <pubDate>Tue, 23 Jun 2026 18:39:42 GMT</pubDate>
   </item><item>
-    <title>MY ARXIV 2023 Publication on Data Distribution Service</title>
-    <link>https://kaleempeeroo.com/MY-ARXIV-2023-Publication-on-Data-Distribution-Service</link>
-    <guid>https://kaleempeeroo.com/MY-ARXIV-2023-Publication-on-Data-Distribution-Service</guid>
-    <description><![CDATA[  ARXIV 2023: A Survey on Experimental Performance Evaluation of Data Distribution Service (DDS) Implementations Abstract The Data Distribution Service (DDS) is a widely used communication specification for real-time mission-critical systems that follow the principles of publish-subscribe middleware. ]]></description>
-    <pubDate>Tue, 23 Jun 2026 18:39:02 GMT</pubDate>
-  </item><item>
-    <title>MY EDCC 2024 Publication</title>
-    <link>https://kaleempeeroo.com/MY-EDCC-2024-Publication</link>
-    <guid>https://kaleempeeroo.com/MY-EDCC-2024-Publication</guid>
-    <description><![CDATA[  EDCC 2024: Machine Learning for Performance Prediction of Data Distribution Service (DDS) Paper Abstract Networking middleware following the Data Distribution Service (DDS) specification is used in real-time mission-critical systems such as autonomous vehicles, energy management systems, and air tr... ]]></description>
-    <pubDate>Tue, 23 Jun 2026 18:39:02 GMT</pubDate>
-  </item><item>
-    <title>Stochastic Ordering for eCDFs (STOE)</title>
-    <link>https://kaleempeeroo.com/Stochastic-Ordering-for-eCDFs-(STOE)</link>
-    <guid>https://kaleempeeroo.com/Stochastic-Ordering-for-eCDFs-(STOE)</guid>
-    <description><![CDATA[ Stochastic Ordering for eCDFs GitHub Link Intro A tool for automated statistical analysis by comparing eCDFs across different percentile ranges and looking for separation between confidence intervals. ]]></description>
-    <pubDate>Tue, 23 Jun 2026 18:39:02 GMT</pubDate>
+    <title>Data Distribution Service (DDS)</title>
+    <link>https://kaleempeeroo.com/Data-Distribution-Service-(DDS)</link>
+    <guid>https://kaleempeeroo.com/Data-Distribution-Service-(DDS)</guid>
+    <description><![CDATA[  middleware used in real time mission critical systems e.g. ]]></description>
+    <pubDate>Tue, 23 Jun 2026 18:39:42 GMT</pubDate>
   </item><item>
     <title>Data Distribution Service Performance Prediction via Quantile Regression</title>
     <link>https://kaleempeeroo.com/Data-Distribution-Service-Performance-Prediction-via-Quantile-Regression</link>
     <guid>https://kaleempeeroo.com/Data-Distribution-Service-Performance-Prediction-via-Quantile-Regression</guid>
     <description><![CDATA[ Intro full data science pipeline from data cleaning all the way through to automated model tuning (with Optuna) and monitoring through use of linear regression, random forest, xgboost, and neural networks. ]]></description>
-    <pubDate>Tue, 23 Jun 2026 18:39:02 GMT</pubDate>
+    <pubDate>Tue, 23 Jun 2026 18:39:42 GMT</pubDate>
   </item><item>
-    <title>MY EDCC 2022 Publication</title>
-    <link>https://kaleempeeroo.com/MY-EDCC-2022-Publication</link>
-    <guid>https://kaleempeeroo.com/MY-EDCC-2022-Publication</guid>
-    <description><![CDATA[  EDCC 2022: Exploring the Effects of Multicast Communication on DDS Performance Abstract The Data Distribution Service (DDS) is an Object Management Group (OMG) standard for high-performance and real-time systems. ]]></description>
-    <pubDate>Tue, 23 Jun 2026 18:39:02 GMT</pubDate>
+    <title>Dotfiles</title>
+    <link>https://kaleempeeroo.com/Dotfiles</link>
+    <guid>https://kaleempeeroo.com/Dotfiles</guid>
+    <description><![CDATA[ You can find my dotfiles here. ]]></description>
+    <pubDate>Tue, 23 Jun 2026 18:39:42 GMT</pubDate>
   </item><item>
-    <title>MY ARXIV 2023 Publication on Data Availability Sampling</title>
-    <link>https://kaleempeeroo.com/MY-ARXIV-2023-Publication-on-Data-Availability-Sampling</link>
-    <guid>https://kaleempeeroo.com/MY-ARXIV-2023-Publication-on-Data-Availability-Sampling</guid>
-    <description><![CDATA[  ARXIV 2023: Data Availability Sampling in Ethereum: Analysis of P2P Networking Requirements Abstract Despite their increasing popularity, blockchains still suffer from severe scalability limitations. ]]></description>
-    <pubDate>Tue, 23 Jun 2026 18:39:02 GMT</pubDate>
+    <title>Evaluating the Performance of Data Distribution Service using Statistical Methods</title>
+    <link>https://kaleempeeroo.com/Evaluating-the-Performance-of-Data-Distribution-Service-using-Statistical-Methods</link>
+    <guid>https://kaleempeeroo.com/Evaluating-the-Performance-of-Data-Distribution-Service-using-Statistical-Methods</guid>
+    <description><![CDATA[  Problem: need to evaluate performance of DDS to better understand it not easy to get performance of expensive configurations the longer you run the performance test the better too many configurations to look at typically people evaluate a specific scenario can we collect a lot of data and use Stati... ]]></description>
+    <pubDate>Tue, 23 Jun 2026 18:39:42 GMT</pubDate>
   </item><item>
-    <title>My MIDDLEWARE 2025 Publication</title>
-    <link>https://kaleempeeroo.com/My-MIDDLEWARE-2025-Publication</link>
-    <guid>https://kaleempeeroo.com/My-MIDDLEWARE-2025-Publication</guid>
-    <description><![CDATA[  MIDDLEWARE 2025: PANDAS: Peer-to-peer, Adaptive Networking Allowing Data Availability Sampling within Ethereum Consensus Timebounds Abstract Layer-2 protocols such as rollups can help address Ethereum’s throughput limits. ]]></description>
-    <pubDate>Tue, 23 Jun 2026 18:39:02 GMT</pubDate>
+    <title>How I Got to 130WPM Typing Speed</title>
+    <link>https://kaleempeeroo.com/How-I-Got-to-130WPM-Typing-Speed</link>
+    <guid>https://kaleempeeroo.com/How-I-Got-to-130WPM-Typing-Speed</guid>
+    <description><![CDATA[  That is a screenshot of my fastest typing speed recorded on my MonkeyType profile. That is a speed of 131 words per minute (WPM). ]]></description>
+    <pubDate>Tue, 23 Jun 2026 18:39:42 GMT</pubDate>
   </item><item>
-    <title>AutoPerf</title>
-    <link>https://kaleempeeroo.com/AutoPerf</link>
-    <guid>https://kaleempeeroo.com/AutoPerf</guid>
-    <description><![CDATA[ Intro AutoPerf: tool for automated performance testing of data distribution service. Built entirely in Python all by myself. ]]></description>
-    <pubDate>Wed, 10 Jun 2026 17:06:35 GMT</pubDate>
+    <title>How I Read Papers</title>
+    <link>https://kaleempeeroo.com/How-I-Read-Papers</link>
+    <guid>https://kaleempeeroo.com/How-I-Read-Papers</guid>
+    <description><![CDATA[  3 pass method from How to Read a Paper pass 1: read title, abstract, into, headings, conclusion pass 2: read paper and ignore details e.g. ]]></description>
+    <pubDate>Tue, 23 Jun 2026 18:39:42 GMT</pubDate>
+  </item><item>
+    <title>How I Remember What I Read</title>
+    <link>https://kaleempeeroo.com/How-I-Remember-What-I-Read</link>
+    <guid>https://kaleempeeroo.com/How-I-Remember-What-I-Read</guid>
+    <description><![CDATA[ For a long time I would read non-fiction books and a few months later I would remember maybe 2 or 3 things from what I read. ]]></description>
+    <pubDate>Tue, 23 Jun 2026 18:39:42 GMT</pubDate>
+  </item><item>
+    <title>How I transitioned to Vim</title>
+    <link>https://kaleempeeroo.com/How-I-transitioned-to-Vim</link>
+    <guid>https://kaleempeeroo.com/How-I-transitioned-to-Vim</guid>
+    <description><![CDATA[ This is the story of how I transitioned to VIM in the hope that it helps you transition to VIM too. ]]></description>
+    <pubDate>Tue, 23 Jun 2026 18:39:42 GMT</pubDate>
   </item>
     </channel>
   </rss>

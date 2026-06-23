@@ -14,16 +14,14 @@ Hosted on **Cloudflare Workers** — static assets in `public/` deployed via `wr
 
 | Path | Purpose |
 |------|---------|
-| `content/` | Markdown source files (copied from Obsidian vault at deploy time — ephemeral) |
-| `quartz/` | SSG engine — build pipeline, plugins, components, styles, i18n, CLI |
-| `quartz/components/` | Preact components (page layout, search, graph, backlinks, etc.) |
-| `quartz/plugins/` | Transformers (remark/rehype), Emitters (HTML/RSS/assets), Filters |
-| `quartz/styles/` | SCSS stylesheets (custom + base) |
-| `quartz/util/` | Utility modules (paths, trie, resources, theme) |
-| `public/` | Build output — deployed to Cloudflare |
-| `scripts/` | `publish-to-substack.mjs` (one-off tool) |
+| `content/` | Markdown source (copied from Obsidian vault at deploy — ephemeral) |
+| `quartz/` | SSG engine — build, plugins, components, styles, i18n, CLI |
+| `public/` | Build output — deployed to Cloudflare Workers |
+| `scripts/` | `publish-to-substack.mjs` — Substack draft/publish tool |
 | `docs/` | Upstream Quartz documentation |
-| `.github/workflows/` | CI — gated to upstream repo, **won't run on this fork** |
+| `.github/workflows/` | CI — gated to upstream repo (won't run on fork) |
+| `.substack-env` | Gitignored — holds `SUBSTACK_SID` + `SUBSTACK_PUB` for Substack auth |
+| `.last-substack-publish.json` | Auto-generated — tracks last Substack draft/publish |
 
 ## Commands
 
@@ -31,19 +29,16 @@ All commands run from project root.
 
 | Command | Action |
 |---------|--------|
-| `npm test` | Run 69 tests via `tsx --test` (~161ms) |
-| `npm run check` | `tsc --noEmit && prettier . --check` |
+| `npm test` | Run 69 tests via `tsx --test` (~155ms) |
+| `npm run check` | `tsc --noEmit && prettier . --check` (prettier flags scratch files — not source) |
 | `npm run format` | `prettier . --write` |
-| `npx quartz build` | Build static site to `public/` (419ms, ~50 files) |
-| `npx quartz build --serve` | Dev server with hot reload on `localhost` |
-| `npx quartz build --serve -d docs` | Dev server with docs content |
-| `npx quartz build --bundleInfo` | Build with bundle analysis |
+| `npx quartz build` | Build static site to `public/` (~225ms, 32→50 files) |
+| `npx quartz build --serve` | Dev server with hot reload |
 | `npx wrangler deploy` | Deploy `public/` to Cloudflare Workers |
 | `./deploy.sh` | Full deploy: vault → build → deploy → git commit → restore |
-| `npm run docs` | `npx quartz build --serve -d docs` |
-| `npm run profile` | CPU profile the build |
+| `./scripts/publish-to-substack.mjs <file>` | Create Substack draft (default, no email). Add `--publish` to send. |
 
-**No `npm run build` script** — use `npx quartz build` directly.
+**No `npm run build` script** — use `npx quartz build` directly. Same for `npm run dev` — use `npx quartz build --serve`.
 
 ## Build Pipeline (3-phase)
 
@@ -95,20 +90,43 @@ Layout configured in `quartz.layout.ts` — two component regions (left panel, r
 
 ## Git Workflow
 
-- **Branch**: Single `master` branch — no feature/hotfix/dev branches
-- **Commit style**: Mix of auto-generated deploy commits (`Site update: Tue 23 Jun 2026 19:39:41 BST`) and manual imperative commits (`fix: resolve Obsidian attachment images...`, `add Substack subscribe form...`)
-- **Deploy flow**: Content copied from vault → build → deploy → `git add && git commit && git push` to master
+- **Branch**: Single `master` — no feature/hotfix/dev branches
+- **Commit style**: Mix of auto-generated deploy commits (`Site update: ...`) and manual imperative commits (`fix:`, `add`, `filter Explorer sidebar...`)
+- **Deploy flow**: vault → build → deploy → `git add && git commit && git push` to master
 - **Remote**: `git@github.com:kaleem-peeroo/Portfolio.git` (SSH)
-- **Dependabot**: Auto-creates short-lived branches for dep updates
+- **Dependabot**: Short-lived branches for dep updates
 
 ## Deploy Pipeline
 
 `deploy.sh` — 5 steps:
-1. Resolve content source (arg > `.portfolio-path` > `$PORTFOLIO_PATH`)
+1. Resolve content source (CLI arg > `.portfolio-path` if exists > `$PORTFOLIO_PATH`)
 2. Remove `content/`, copy from Obsidian vault
 3. `npx quartz build` → `public/`
 4. `npx wrangler deploy` → Cloudflare Workers
 5. `git add . && git commit -m "Site update: ..." && git push` to master
+
+## Substack Publishing
+
+`scripts/publish-to-substack.mjs` — converts a Markdown post to Substack via the API.
+
+**Auth** (set one):
+- `export SUBSTACK_SID="..."` and `export SUBSTACK_PUB="kaleemp.substack.com"`
+- Or write to `.substack-env` (gitignored — already done)
+
+Get `SUBSTACK_SID` from browser: login to substack.com → DevTools → Storage → Cookies → `substack.com` → copy `substack.sid`
+
+**Usage:**
+```bash
+# Draft (no email sent)
+./scripts/publish-to-substack.mjs "content/your-post.md"
+
+# Publish + send to subscribers
+./scripts/publish-to-substack.mjs --publish "content/your-post.md"
+```
+
+**Handles:** Obsidian wikilinks (`![[image.png]]`), frontmatter (`title`, `subtitle`, `draft: true` to skip), image upload. Saves last result to `.last-substack-publish.json`.
+
+**Gotcha — ProseMirror image nodes:** Substack renders images as `image` with `src` attr, NOT `captionedImage` with `url`. If images are missing in drafts, fix the ProseMirror node type in the script.
 
 ## Key Configuration Files
 
@@ -121,14 +139,16 @@ Layout configured in `quartz.layout.ts` — two component regions (left panel, r
 | `.node-version` | Node 22.16.0 |
 | `.npmrc` | `engine-strict=true` |
 | `.prettierrc` | Formatting (100 width, 2 spaces, no semis) |
+| `.substack-env` | Substack auth (gitignored) — `SUBSTACK_SID` + `SUBSTACK_PUB` |
 
 ## Risks & Gotchas
 
-- **No `src/` directory** — Quartz engine lives in `quartz/`
+- **Quartz engine lives in `quartz/`** — no traditional `src/` dir
 - **Preact, not React** — `preact-render-to-string` for SSR, NOT `react-dom/server`
-- **CI gated to upstream** — workflows check `github.repository == 'jackyzha0/quartz'` so they **won't run on this fork**. All quality checks must run locally.
-- **No ESLint** — only `tsc --noEmit` + prettier for code quality
-- **No `npm run build`** — use `npx quartz build` directly
+- **CI gated to upstream** — workflows won't run on fork. Quality checks must run locally.
+- **No ESLint** — only `tsc --noEmit` + prettier
+- **No `npm run build`** — use `npx quartz build`
 - **Cloudflare Workers** — no Node.js runtime features in worker code
-- **content/ dir is ephemeral** — created/copied at deploy time, not committed (mostly)
-- **Prettier check** will flag `init/` and `.pi/` scratch files — not source code issues
+- **content/ is ephemeral** — copied from vault at deploy, not committed
+- **Prettier flags scratch files** — `.pi/AGENTS.md`, `.last-substack-publish.json`, `progress.md` — not source issues
+- **Substack images use ProseMirror** — node type must be `image` with `src` attr, NOT `captionedImage` with `url` (won't render)

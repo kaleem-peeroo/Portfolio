@@ -93,7 +93,9 @@ async function uploadImage(filePath) {
     throw new Error(`Image upload failed (${res.status}): ${text.slice(0, 200)}`)
   }
   const data = await res.json()
-  return data.url || data.image_url || data
+  // Substack upload returns { url: "..." }
+  const imageUrl = data.url || data.image_url || data
+  return imageUrl
 }
 
 // ─── Frontmatter ────────────────────────────────────────────────────────────────
@@ -227,9 +229,8 @@ function mdastNodeToPM(node) {
       const imgChild = node.children.find((c) => c.type === "image")
       if (imgChild) {
         return {
-          type: "captionedImage",
-          attrs: { url: imgChild.url, alt: imgChild.alt || "" },
-          content: [],
+          type: "image",
+          attrs: { src: imgChild.url, alt: imgChild.alt || "" },
         }
       }
       return { type: "paragraph", content: inlineToPM(node.children) }
@@ -267,9 +268,8 @@ function mdastNodeToPM(node) {
       return { type: "paragraph", content: [{ type: "text", text: node.value }] }
     case "image": {
       return {
-        type: "captionedImage",
-        attrs: { url: node.url, alt: node.alt || "" },
-        content: [],
+        type: "image",
+        attrs: { src: node.url, alt: node.alt || "" },
       }
     }
     default:
