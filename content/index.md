@@ -2,7 +2,7 @@
 title: Home
 ---
 
-# [[0_portfolio/Projects|Projects]] | [[0_portfolio/Research|Research]] | [[Entrepreneurial Projects]] | [[Public Speaking]] | [[Blog]] | [[Contact]] | [[Dotfiles]]
+[[0_portfolio/Projects|Projects]] | [[0_portfolio/Research|Research]] | [[Entrepreneurial Projects]] | [[Public Speaking]] | [[Blog]] | [[Contact]] | [[Dotfiles]]
 
 **This website is a work in progress. Some pages may be empty or just contain short notes.**
 
