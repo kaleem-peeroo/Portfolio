@@ -7,6 +7,7 @@ I've learnt a lot over the years of building and breaking things and most (if no
 - [[How I transitioned to Vim]]
 - [[How I Remember What I Read]]
 - [[How I Got to 130WPM Typing Speed]]
+- [[How I do a Literature Search]]
 - [[My Data Visualisation Principles]]
 - [[How I Read Papers]]
 - [[How I Write Papers]]

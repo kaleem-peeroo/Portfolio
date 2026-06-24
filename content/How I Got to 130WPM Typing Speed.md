@@ -1,5 +1,6 @@
 ---
-last_modified: 2026-06-10
+last_modified: 2026-06-23
+date_published: 2026-06-23
 ---
 
 ![[131 wpm 30 seconds screenshot proof.png|200]] 
