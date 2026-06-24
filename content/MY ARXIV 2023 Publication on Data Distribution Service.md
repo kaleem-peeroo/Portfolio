@@ -1,4 +1,0 @@
-- ARXIV 2023: [A Survey on Experimental Performance Evaluation of Data Distribution Service (DDS) Implementations](https://doi.org/10.48550/arXiv.2310.16630)
-
-# Abstract
-The Data Distribution Service (DDS) is a widely used communication specification for real-time mission-critical systems that follow the principles of publish-subscribe middleware. DDS has an extensive set of quality of service (QoS) parameters allowing a thorough customisation of the intended communication. An extensive survey of the performance of the implementations of this communication middleware is lacking. This paper closes the gap by surveying the state of the art in performance of various DDS implementations and identifying any research gaps that exist within this domain.

@@ -1,6 +1,0 @@
-- Litmaps
-	- find connected papers
-- Readwise reader
-	- annotate papers
-- obsidian
-	- sync annotations from reader and make notes

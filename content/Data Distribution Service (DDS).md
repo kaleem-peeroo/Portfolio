@@ -1,8 +1,0 @@
-- middleware
-- used in real time mission critical systems e.g. air traffic control, autonomous vehicles, energy management systems, medical IoT
-- uses publish-subscribe paradigm
-	- publishers send data on certain topics using data writers
-		- data writers are entities contained in pubs that write messages on a specific single topic
-	- subscribers receive data on certain topics using data readers
-		- data readers are entities contained in subs that read messages on a specific topic
-- pubs and subs can be added in real-time
