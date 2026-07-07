@@ -6,65 +6,65 @@
       <description>Last 10 notes on Kaleem Peeroo</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>Home</title>
-    <link>https://kaleempeeroo.com/</link>
-    <guid>https://kaleempeeroo.com/</guid>
-    <description><![CDATA[ Projects | Research | Entrepreneurial Projects | Public Speaking | Blog | Contact | Dotfiles This website is a work in progress. ]]></description>
-    <pubDate>Wed, 24 Jun 2026 15:22:45 GMT</pubDate>
-  </item><item>
-    <title>Public Speaking</title>
-    <link>https://kaleempeeroo.com/Public-Speaking</link>
-    <guid>https://kaleempeeroo.com/Public-Speaking</guid>
-    <description><![CDATA[ 3MT Hackathon - Quizi CGVC 2024 PhD Law Students . ]]></description>
-    <pubDate>Tue, 23 Jun 2026 20:01:03 GMT</pubDate>
-  </item><item>
-    <title>Research</title>
-    <link>https://kaleempeeroo.com/Research</link>
-    <guid>https://kaleempeeroo.com/Research</guid>
-    <description><![CDATA[ My research can be broken down into 2 main pieces: Performance Evaluation of DDS Performance Prediction of DDS Publications. ]]></description>
-    <pubDate>Tue, 23 Jun 2026 19:06:54 GMT</pubDate>
-  </item><item>
     <title>AutoPerf</title>
     <link>https://kaleempeeroo.com/AutoPerf</link>
     <guid>https://kaleempeeroo.com/AutoPerf</guid>
-    <description><![CDATA[ Intro AutoPerf: tool for automated performance testing of data distribution service. Built entirely in Python all by myself. ]]></description>
-    <pubDate>Tue, 23 Jun 2026 18:39:42 GMT</pubDate>
+    <description><![CDATA[ Intro AutoPerf is a tool that I built for automated performance testing of data distribution service. Built entirely in Python all by myself. ]]></description>
+    <pubDate>Wed, 24 Jun 2026 15:25:57 GMT</pubDate>
   </item><item>
     <title>Blog</title>
     <link>https://kaleempeeroo.com/Blog</link>
     <guid>https://kaleempeeroo.com/Blog</guid>
     <description><![CDATA[ I’ve learnt a lot over the years of building and breaking things and most (if not all) of the time, doing something for the first time always took a long time because you end up spending a lot of time figuring things out. ]]></description>
-    <pubDate>Tue, 23 Jun 2026 18:39:42 GMT</pubDate>
+    <pubDate>Wed, 24 Jun 2026 15:25:57 GMT</pubDate>
+  </item><item>
+    <title>Contact</title>
+    <link>https://kaleempeeroo.com/Contact</link>
+    <guid>https://kaleempeeroo.com/Contact</guid>
+    <description><![CDATA[  PlatformContact / ProfileEmailmail@KaleemPeeroo.comLinkedInkaleem-peerooGitHubkaleem-peerooGoogle ScholarKaleem PeerooORCID0000-0001-8601-4750ResearchGateKaleem Peeroo. ]]></description>
+    <pubDate>Wed, 24 Jun 2026 15:25:57 GMT</pubDate>
   </item><item>
     <title>Data Distribution Service (DDS)</title>
     <link>https://kaleempeeroo.com/Data-Distribution-Service-(DDS)</link>
     <guid>https://kaleempeeroo.com/Data-Distribution-Service-(DDS)</guid>
     <description><![CDATA[  middleware used in real time mission critical systems e.g. ]]></description>
-    <pubDate>Tue, 23 Jun 2026 18:39:42 GMT</pubDate>
+    <pubDate>Wed, 24 Jun 2026 15:25:57 GMT</pubDate>
   </item><item>
     <title>Data Distribution Service Performance Prediction via Quantile Regression</title>
     <link>https://kaleempeeroo.com/Data-Distribution-Service-Performance-Prediction-via-Quantile-Regression</link>
     <guid>https://kaleempeeroo.com/Data-Distribution-Service-Performance-Prediction-via-Quantile-Regression</guid>
     <description><![CDATA[ Intro full data science pipeline from data cleaning all the way through to automated model tuning (with Optuna) and monitoring through use of linear regression, random forest, xgboost, and neural networks. ]]></description>
-    <pubDate>Tue, 23 Jun 2026 18:39:42 GMT</pubDate>
+    <pubDate>Wed, 24 Jun 2026 15:25:57 GMT</pubDate>
   </item><item>
     <title>Dotfiles</title>
     <link>https://kaleempeeroo.com/Dotfiles</link>
     <guid>https://kaleempeeroo.com/Dotfiles</guid>
     <description><![CDATA[ You can find my dotfiles here. ]]></description>
-    <pubDate>Tue, 23 Jun 2026 18:39:42 GMT</pubDate>
+    <pubDate>Wed, 24 Jun 2026 15:25:57 GMT</pubDate>
   </item><item>
     <title>Evaluating the Performance of Data Distribution Service using Statistical Methods</title>
     <link>https://kaleempeeroo.com/Evaluating-the-Performance-of-Data-Distribution-Service-using-Statistical-Methods</link>
     <guid>https://kaleempeeroo.com/Evaluating-the-Performance-of-Data-Distribution-Service-using-Statistical-Methods</guid>
     <description><![CDATA[  Problem: need to evaluate performance of DDS to better understand it not easy to get performance of expensive configurations the longer you run the performance test the better too many configurations to look at typically people evaluate a specific scenario can we collect a lot of data and use Stati... ]]></description>
-    <pubDate>Tue, 23 Jun 2026 18:39:42 GMT</pubDate>
+    <pubDate>Wed, 24 Jun 2026 15:25:57 GMT</pubDate>
   </item><item>
     <title>How I Got to 130WPM Typing Speed</title>
     <link>https://kaleempeeroo.com/How-I-Got-to-130WPM-Typing-Speed</link>
     <guid>https://kaleempeeroo.com/How-I-Got-to-130WPM-Typing-Speed</guid>
     <description><![CDATA[  That is a screenshot of my fastest typing speed recorded on my MonkeyType profile. That is a speed of 131 words per minute (WPM). ]]></description>
-    <pubDate>Tue, 23 Jun 2026 18:39:42 GMT</pubDate>
+    <pubDate>Wed, 24 Jun 2026 15:25:57 GMT</pubDate>
+  </item><item>
+    <title>How I Read Papers</title>
+    <link>https://kaleempeeroo.com/How-I-Read-Papers</link>
+    <guid>https://kaleempeeroo.com/How-I-Read-Papers</guid>
+    <description><![CDATA[ When I first started my PhD I had no idea how to actually read a paper. ]]></description>
+    <pubDate>Wed, 24 Jun 2026 15:25:57 GMT</pubDate>
+  </item><item>
+    <title>How I Remember What I Read</title>
+    <link>https://kaleempeeroo.com/How-I-Remember-What-I-Read</link>
+    <guid>https://kaleempeeroo.com/How-I-Remember-What-I-Read</guid>
+    <description><![CDATA[ For a long time I would read non-fiction books and a few months later I would remember maybe 2 or 3 things from what I read. ]]></description>
+    <pubDate>Wed, 24 Jun 2026 15:25:57 GMT</pubDate>
   </item>
     </channel>
   </rss>

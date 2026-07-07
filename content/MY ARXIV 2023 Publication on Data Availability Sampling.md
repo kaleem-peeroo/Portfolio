@@ -1,0 +1,4 @@
+- ARXIV 2023: [Data Availability Sampling in Ethereum: Analysis of P2P Networking Requirements](https://doi.org/10.48550/arXiv.2306.11456)
+ 
+# Abstract
+Despite their increasing popularity, blockchains still suffer from severe scalability limitations. Recently, Ethereum proposed a novel approach to block validation based on Data Availability Sampling (DAS), that has the potential to improve its transaction per second rate by more than two orders of magnitude. DAS should also significantly reduce per-transaction validation costs. At the same time, DAS introduces new communication patterns in the Ethereum Peer-to-Peer (P2P) network. These drastically increase the amount of exchanged data and impose stringent latency objectives. In this paper, we review the new requirements for P2P networking associated with DAS, discuss open challenges, and identify new research directions.

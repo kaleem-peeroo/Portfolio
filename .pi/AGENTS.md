@@ -152,3 +152,17 @@ Get `SUBSTACK_SID` from browser: login to substack.com → DevTools → Storage 
 - **content/ is ephemeral** — copied from vault at deploy, not committed
 - **Prettier flags scratch files** — `.pi/AGENTS.md`, `.last-substack-publish.json`, `progress.md` — not source issues
 - **Substack images use ProseMirror** — node type must be `image` with `src` attr, NOT `captionedImage` with `url` (won't render)
+
+## Agent skills
+
+### Issue tracker
+
+Local markdown files under `.scratch/<feature-slug>/`. See `docs/agents/issue-tracker.md`.
+
+### Triage labels
+
+Default five-role vocabulary (needs-triage, needs-info, ready-for-agent, ready-for-human, wontfix). See `docs/agents/triage-labels.md`.
+
+### Domain docs
+
+Single-context — one CONTEXT.md + docs/adr/ at repo root. See `docs/agents/domain.md`.

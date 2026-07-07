@@ -1,0 +1,5 @@
+- strength: move weight
+- Hypertrophy: move muscle
+- strength: 3 to 5 reps
+- hypertrophy: 5 to 15 reps
+- intensity is probably most important thing (aim for 8 to 10 - I like the feeling of fighting the failure and pushing past your mental limit)

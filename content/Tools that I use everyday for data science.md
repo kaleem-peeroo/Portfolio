@@ -1,0 +1,5 @@
+- Neovim
+- visidata
+- tmux
+- kitty
+- obsidian

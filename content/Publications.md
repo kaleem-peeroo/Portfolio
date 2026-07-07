@@ -1,0 +1,6 @@
+- [[My MIDDLEWARE 2025 Publication|MIDDLEWARE 2025]]
+- [[MY EDCC 2024 Publication|EDCC 2024]]
+- [[MY CGVC 2024 Publication|CGVC 2024]]
+- [[MY ARXIV 2023 Publication on Data Availability Sampling|ARXIV 2023 - Data Availability Sampling]]
+- [[MY ARXIV 2023 Publication on Data Distribution Service|ARXIV 2023 - Data Distribution Service]]
+- [[MY EDCC 2022 Publication|EDCC 2022]]

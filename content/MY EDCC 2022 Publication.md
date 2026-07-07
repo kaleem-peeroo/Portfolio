@@ -1,0 +1,6 @@
+- EDCC 2022: [Exploring the Effects of Multicast Communication on DDS Performance](https://doi.org/10.48550/arXiv.2209.09001)
+
+# Abstract
+The Data Distribution Service (DDS) is an Object Management Group (OMG) standard for high-performance and real-time systems. DDS is a data-centric middleware based on the publish-subscribe communication pattern and is used in many mission-critical, or even safety-critical, systems such as air traffic control and robot operating system (ROS2).
+
+This research aims at identifying how the usage of multicast affects the performance of DDS communication for varying numbers of participants (publishers and subscribers). The results show that DDS configured for multicast communication can exhibit worse performance under a high load (a greater number of participants) than DDS configured for unicast communication. This counter-intuitive result reinforces the need for researchers and practitioners to be clear about the details of how multicast communication operates on the network. 

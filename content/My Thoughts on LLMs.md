@@ -1,0 +1,3 @@
+- great for creating things from scratch
+- not so great for editing large codebases
+- very expensive when you want to make a change to a large codebase
