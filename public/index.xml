@@ -6,6 +6,12 @@
       <description>Last 10 notes on Kaleem Peeroo</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Home</title>
+    <link>https://kaleempeeroo.com/</link>
+    <guid>https://kaleempeeroo.com/</guid>
+    <description><![CDATA[ Projects | Research | Entrepreneurial Projects | Public Speaking | Blog | Contact | Dotfiles This website is a work in progress. ]]></description>
+    <pubDate>Wed, 08 Jul 2026 13:44:29 GMT</pubDate>
+  </item><item>
     <title>AutoPerf</title>
     <link>https://kaleempeeroo.com/AutoPerf</link>
     <guid>https://kaleempeeroo.com/AutoPerf</guid>
@@ -58,12 +64,6 @@
     <link>https://kaleempeeroo.com/How-I-Read-Papers</link>
     <guid>https://kaleempeeroo.com/How-I-Read-Papers</guid>
     <description><![CDATA[ When I first started my PhD I had no idea how to actually read a paper. ]]></description>
-    <pubDate>Tue, 07 Jul 2026 22:18:39 GMT</pubDate>
-  </item><item>
-    <title>How I Remember What I Read</title>
-    <link>https://kaleempeeroo.com/How-I-Remember-What-I-Read</link>
-    <guid>https://kaleempeeroo.com/How-I-Remember-What-I-Read</guid>
-    <description><![CDATA[ For a long time I would read non-fiction books and a few months later I would remember maybe 2 or 3 things from what I read. ]]></description>
     <pubDate>Tue, 07 Jul 2026 22:18:39 GMT</pubDate>
   </item>
     </channel>
