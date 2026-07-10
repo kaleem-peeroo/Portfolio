@@ -43,7 +43,7 @@ My projects can be temporally (most recent first) broken down into:
 	- booking system for sports centre with CRUD functionality
 - then learnt how to make full stack web app with PHP instead of ASP.net
 - helped students build full stack PHP web apps for their college coursework
-- built a lof of full stack web apps during first 2 years of undergrad
+- built a lot of full stack web apps during first 2 years of undergrad
 	- [Bookmarker](https://github.com/kaleem-peeroo/Bookmarker): app for tracking bookmarks when reading
 	- [MyDiary](https://github.com/kaleem-peeroo/MyDiary): diary app
 	- workowta: app for tracking workout stats e.g. sets, reps, RPE, etc.

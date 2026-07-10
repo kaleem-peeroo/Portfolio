@@ -4,10 +4,14 @@ full data science pipeline from data cleaning all the way through to automated m
 See [[Predicting the Performance of Data Distribution Service via Percentile Regression using Machine Learning]].
 
 # Challenges
+- how to characterise the distribution
+	- ideally the model fits the probability density function
 
 # Mistakes
+- incorrectly reversing transformations when calculating evaluation metrics
 
 # Technical Decisions
+- pytorch instead of TensorFlow
 
 # What I Would do Differently
 

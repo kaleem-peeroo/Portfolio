@@ -1,2 +1,5 @@
 - remove everything that does not add value or help the visualisation
 - use [this tool](https://www.learnui.design/tools/data-color-picker.html#divergent) for picking your colours
+- the visualisation should tell a story
+- emphasise specific points
+	- make it easy to understand the visualisation
