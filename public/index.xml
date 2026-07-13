@@ -6,22 +6,52 @@
       <description>Last 10 notes on Kaleem Peeroo</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>Home</title>
-    <link>https://kaleempeeroo.com/</link>
-    <guid>https://kaleempeeroo.com/</guid>
-    <description><![CDATA[ Projects | Research | Entrepreneurial Projects | Public Speaking | Blog | Contact | Dotfiles This website is a work in progress. ]]></description>
-    <pubDate>Wed, 08 Jul 2026 15:30:42 GMT</pubDate>
-  </item><item>
-    <title>AutoPerf</title>
-    <link>https://kaleempeeroo.com/AutoPerf</link>
-    <guid>https://kaleempeeroo.com/AutoPerf</guid>
-    <description><![CDATA[ Intro AutoPerf is a tool that I built for automated performance testing of data distribution service. Built entirely in Python all by myself. ]]></description>
-    <pubDate>Tue, 07 Jul 2026 22:18:39 GMT</pubDate>
+    <title>How I do a Literature Search</title>
+    <link>https://kaleempeeroo.com/How-I-do-a-Literature-Search</link>
+    <guid>https://kaleempeeroo.com/How-I-do-a-Literature-Search</guid>
+    <description><![CDATA[ There are 3 steps to doing a literature search (all of them involve looking for papers because its a literature search…): Use search engine to find 3 to 5 recent papers Find shared citations and repeated authors Find recent proceedings from top conference websites 1. ]]></description>
+    <pubDate>Mon, 13 Jul 2026 14:31:30 GMT</pubDate>
   </item><item>
     <title>Blog</title>
     <link>https://kaleempeeroo.com/Blog</link>
     <guid>https://kaleempeeroo.com/Blog</guid>
     <description><![CDATA[ I’ve learnt a lot over the years of building and breaking things and most (if not all) of the time, doing something for the first time always took a long time because you end up spending a lot of time figuring things out. ]]></description>
+    <pubDate>Fri, 10 Jul 2026 12:02:09 GMT</pubDate>
+  </item><item>
+    <title>Data Distribution Service Performance Prediction via Quantile Regression</title>
+    <link>https://kaleempeeroo.com/Data-Distribution-Service-Performance-Prediction-via-Quantile-Regression</link>
+    <guid>https://kaleempeeroo.com/Data-Distribution-Service-Performance-Prediction-via-Quantile-Regression</guid>
+    <description><![CDATA[ Intro full data science pipeline from data cleaning all the way through to automated model tuning (with Optuna) and monitoring through use of linear regression, random forest, xgboost, and neural networks. ]]></description>
+    <pubDate>Fri, 10 Jul 2026 12:02:09 GMT</pubDate>
+  </item><item>
+    <title>My Data Visualisation Principles</title>
+    <link>https://kaleempeeroo.com/My-Data-Visualisation-Principles</link>
+    <guid>https://kaleempeeroo.com/My-Data-Visualisation-Principles</guid>
+    <description><![CDATA[  remove everything that does not add value or help the visualisation use this tool for picking your colours the visualisation should tell a story emphasise specific points make it easy to understand the visualisation . ]]></description>
+    <pubDate>Fri, 10 Jul 2026 12:02:09 GMT</pubDate>
+  </item><item>
+    <title>My Principles for Weight Training</title>
+    <link>https://kaleempeeroo.com/My-Principles-for-Weight-Training</link>
+    <guid>https://kaleempeeroo.com/My-Principles-for-Weight-Training</guid>
+    <description><![CDATA[  strength: move weight Hypertrophy: move muscle strength: 3 to 5 reps hypertrophy: 5 to 15 reps intensity is second most important thing (aim for 8 to 10 - I like the feeling of fighting the failure and pushing past your mental limit) most important thing is moving the muscle - focus and get that mi... ]]></description>
+    <pubDate>Fri, 10 Jul 2026 12:02:09 GMT</pubDate>
+  </item><item>
+    <title>Projects</title>
+    <link>https://kaleempeeroo.com/Projects</link>
+    <guid>https://kaleempeeroo.com/Projects</guid>
+    <description><![CDATA[ This page contains all of my technical projects, starting from when I taught myself HTML, CSS and JavaScript at the age of 12 to today where I implemented the full data science pipeline from multi-dimensional data collection and analysis to machine learning modelling, evaluation, and monitoring. ]]></description>
+    <pubDate>Fri, 10 Jul 2026 12:02:09 GMT</pubDate>
+  </item><item>
+    <title>Home</title>
+    <link>https://kaleempeeroo.com/</link>
+    <guid>https://kaleempeeroo.com/</guid>
+    <description><![CDATA[ Projects | Research | Entrepreneurial Projects | Public Speaking | Blog | Contact | Dotfiles This website is a work in progress. ]]></description>
+    <pubDate>Fri, 10 Jul 2026 12:02:09 GMT</pubDate>
+  </item><item>
+    <title>AutoPerf</title>
+    <link>https://kaleempeeroo.com/AutoPerf</link>
+    <guid>https://kaleempeeroo.com/AutoPerf</guid>
+    <description><![CDATA[ Intro AutoPerf is a tool that I built for automated performance testing of data distribution service. Built entirely in Python all by myself. ]]></description>
     <pubDate>Tue, 07 Jul 2026 22:18:39 GMT</pubDate>
   </item><item>
     <title>Contact</title>
@@ -34,36 +64,6 @@
     <link>https://kaleempeeroo.com/Data-Distribution-Service-(DDS)</link>
     <guid>https://kaleempeeroo.com/Data-Distribution-Service-(DDS)</guid>
     <description><![CDATA[  middleware used in real time mission critical systems e.g. ]]></description>
-    <pubDate>Tue, 07 Jul 2026 22:18:39 GMT</pubDate>
-  </item><item>
-    <title>Data Distribution Service Performance Prediction via Quantile Regression</title>
-    <link>https://kaleempeeroo.com/Data-Distribution-Service-Performance-Prediction-via-Quantile-Regression</link>
-    <guid>https://kaleempeeroo.com/Data-Distribution-Service-Performance-Prediction-via-Quantile-Regression</guid>
-    <description><![CDATA[ Intro full data science pipeline from data cleaning all the way through to automated model tuning (with Optuna) and monitoring through use of linear regression, random forest, xgboost, and neural networks. ]]></description>
-    <pubDate>Tue, 07 Jul 2026 22:18:39 GMT</pubDate>
-  </item><item>
-    <title>Dotfiles</title>
-    <link>https://kaleempeeroo.com/Dotfiles</link>
-    <guid>https://kaleempeeroo.com/Dotfiles</guid>
-    <description><![CDATA[ You can find my dotfiles here. ]]></description>
-    <pubDate>Tue, 07 Jul 2026 22:18:39 GMT</pubDate>
-  </item><item>
-    <title>Evaluating the Performance of Data Distribution Service using Statistical Methods</title>
-    <link>https://kaleempeeroo.com/Evaluating-the-Performance-of-Data-Distribution-Service-using-Statistical-Methods</link>
-    <guid>https://kaleempeeroo.com/Evaluating-the-Performance-of-Data-Distribution-Service-using-Statistical-Methods</guid>
-    <description><![CDATA[  Problem: need to evaluate performance of DDS to better understand it not easy to get performance of expensive configurations the longer you run the performance test the better too many configurations to look at typically people evaluate a specific scenario can we collect a lot of data and use Stati... ]]></description>
-    <pubDate>Tue, 07 Jul 2026 22:18:39 GMT</pubDate>
-  </item><item>
-    <title>How I Got to 130WPM Typing Speed</title>
-    <link>https://kaleempeeroo.com/How-I-Got-to-130WPM-Typing-Speed</link>
-    <guid>https://kaleempeeroo.com/How-I-Got-to-130WPM-Typing-Speed</guid>
-    <description><![CDATA[  That is a screenshot of my fastest typing speed recorded on my MonkeyType profile. That is a speed of 131 words per minute (WPM). ]]></description>
-    <pubDate>Tue, 07 Jul 2026 22:18:39 GMT</pubDate>
-  </item><item>
-    <title>How I Read Papers</title>
-    <link>https://kaleempeeroo.com/How-I-Read-Papers</link>
-    <guid>https://kaleempeeroo.com/How-I-Read-Papers</guid>
-    <description><![CDATA[ When I first started my PhD I had no idea how to actually read a paper. ]]></description>
     <pubDate>Tue, 07 Jul 2026 22:18:39 GMT</pubDate>
   </item>
     </channel>

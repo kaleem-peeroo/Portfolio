@@ -15,6 +15,8 @@ My projects can be temporally (most recent first) broken down into:
 4. [[0_portfolio/Projects#4. Full-Stack Web Apps|Full-Stack Web Apps]]
 5. [[0_portfolio/Projects#5. Websites|Websites]]
 
+You can find a full list of all of my projects right at the [[0_portfolio/Projects#All Projects|bottom]].
+
 # 1. Data Science
 - [[Data Distribution Service Performance Prediction via Quantile Regression|DDS Performance Prediction via Quantile Regression]]
 	1. Setting up physical testbeds.
@@ -25,13 +27,13 @@ My projects can be temporally (most recent first) broken down into:
 	6. Modelling machine learning models to predict performance distributions as percentiles.
 
 # 2. System Apps
+- [[Stochastic Ordering for eCDFs (STOE)]]
+	- Tool for automating stochastic analysis of eCDFs for thousands of configured experiments.
+	- Saved over 16 hours of manual analysis work.
 - [[0_portfolio/AutoPerf|AutoPerf]]
 	- Entire orchestration suite used to deploy experiments, execute them, gather the data and produce a dataset.
 	- Saved 333 hours of manual experimentation.
 	- Produced 21 datasets totalling 7 GB of measurement data.
-- [[Stochastic Ordering for eCDFs (STOE)]]
-	- Tool for automating stochastic analysis of eCDFs for thousands of configured experiments.
-	- Saved over 16 hours of manual analysis work.
 
 # 3. Games
 - I dabbled in making games
@@ -60,3 +62,16 @@ My projects can be temporally (most recent first) broken down into:
 	- just a page that informed users that they were being redirected outside of the company
 - built a website for friends startup for connecting doctors with patients (first year uni)
 	- just a homepage that advertised what the startup did (more like would do)
+
+# All Projects
+This list goes starts from most recent.
+- [[ReadToRetain]]
+- [[Data Distribution Service Performance Prediction via Quantile Regression]]
+- [[Stochastic Ordering for eCDFs (STOE)]]
+- [[0_portfolio/AutoPerf|AutoPerf]]
+- [[Bookmarker]]
+- [[MyDiary]]
+- [[Library System]]
+- [[pdfs2web]]
+- [[Companedia]]
+- [[GARITS]]
