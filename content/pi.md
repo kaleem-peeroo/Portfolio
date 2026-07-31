@@ -1,0 +1,1 @@
+Pi is my coding agent of choice. Why? Because of how barebones it is. It's stripped everything out leaving just the bare minimum. Which is perfectly ready for customisation. It's similar to why I use [[NeoVim]], because I can configure it **exactly** the way I want.

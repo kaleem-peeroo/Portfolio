@@ -1,0 +1,1 @@
+A custom application toolbar on Mac that I've customised to show [[Aerospace]] windows too. It shows the exact icons and outputs of commands (like checking the network download and upload throughput) that I choose.

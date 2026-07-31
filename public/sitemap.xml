@@ -1,4 +1,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url>
+    <loc>https://kaleempeeroo.com/Aerospace</loc>
+    <lastmod>2026-07-31T17:50:47.437Z</lastmod>
+  </url><url>
     <loc>https://kaleempeeroo.com/AutoPerf</loc>
     <lastmod>2026-07-07T22:18:39.000Z</lastmod>
   </url><url>
@@ -30,7 +33,7 @@
     <lastmod>2026-07-07T22:18:39.000Z</lastmod>
   </url><url>
     <loc>https://kaleempeeroo.com/How-I-do-a-Literature-Search</loc>
-    <lastmod>2026-07-13T14:31:30.968Z</lastmod>
+    <lastmod>2026-07-13T14:32:00.000Z</lastmod>
   </url><url>
     <loc>https://kaleempeeroo.com/How-I-transitioned-to-Vim</loc>
     <lastmod>2026-07-07T22:18:39.000Z</lastmod>
@@ -62,11 +65,14 @@
     <loc>https://kaleempeeroo.com/My-Principles-for-Weight-Training</loc>
     <lastmod>2026-07-10T12:02:09.000Z</lastmod>
   </url><url>
+    <loc>https://kaleempeeroo.com/NeoVim</loc>
+    <lastmod>2026-07-31T17:50:47.433Z</lastmod>
+  </url><url>
     <loc>https://kaleempeeroo.com/Predicting-the-Performance-of-Data-Distribution-Service-via-Percentile-Regression-using-Machine-Learning</loc>
     <lastmod>2026-07-07T22:18:39.000Z</lastmod>
   </url><url>
     <loc>https://kaleempeeroo.com/Projects</loc>
-    <lastmod>2026-07-10T12:02:09.000Z</lastmod>
+    <lastmod>2026-07-13T14:32:00.000Z</lastmod>
   </url><url>
     <loc>https://kaleempeeroo.com/Public-Speaking</loc>
     <lastmod>2026-07-07T22:18:39.000Z</lastmod>
@@ -76,6 +82,9 @@
   </url><url>
     <loc>https://kaleempeeroo.com/Research</loc>
     <lastmod>2026-07-07T22:18:39.000Z</lastmod>
+  </url><url>
+    <loc>https://kaleempeeroo.com/SketchyBar</loc>
+    <lastmod>2026-07-31T17:50:47.432Z</lastmod>
   </url><url>
     <loc>https://kaleempeeroo.com/Stochastic-Ordering-for-eCDFs-(STOE)</loc>
     <lastmod>2026-07-07T22:18:39.000Z</lastmod>
@@ -91,4 +100,7 @@
   </url><url>
     <loc>https://kaleempeeroo.com/</loc>
     <lastmod>2026-07-10T12:02:09.000Z</lastmod>
+  </url><url>
+    <loc>https://kaleempeeroo.com/pi</loc>
+    <lastmod>2026-07-31T17:50:47.434Z</lastmod>
   </url></urlset>

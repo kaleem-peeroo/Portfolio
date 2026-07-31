@@ -1,0 +1,1 @@
+My editor of choice. Super highly configurable and I've configured it just the way I like. The biggest improvement I can remember is adding neotest to let you run tests and see their outcomes while you stay in the code. It saves you having a dedicated tmux pane for running unit tests.

@@ -6,16 +6,46 @@
       <description>Last 10 notes on Kaleem Peeroo</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Aerospace</title>
+    <link>https://kaleempeeroo.com/Aerospace</link>
+    <guid>https://kaleempeeroo.com/Aerospace</guid>
+    <description><![CDATA[ Aerospace is a window tiling manager that I use on Mac. ]]></description>
+    <pubDate>Fri, 31 Jul 2026 17:50:47 GMT</pubDate>
+  </item><item>
+    <title>pi</title>
+    <link>https://kaleempeeroo.com/pi</link>
+    <guid>https://kaleempeeroo.com/pi</guid>
+    <description><![CDATA[ Pi is my coding agent of choice. Why? Because of how barebones it is. It’s stripped everything out leaving just the bare minimum. ]]></description>
+    <pubDate>Fri, 31 Jul 2026 17:50:47 GMT</pubDate>
+  </item><item>
+    <title>NeoVim</title>
+    <link>https://kaleempeeroo.com/NeoVim</link>
+    <guid>https://kaleempeeroo.com/NeoVim</guid>
+    <description><![CDATA[ My editor of choice. Super highly configurable and I’ve configured it just the way I like. ]]></description>
+    <pubDate>Fri, 31 Jul 2026 17:50:47 GMT</pubDate>
+  </item><item>
+    <title>SketchyBar</title>
+    <link>https://kaleempeeroo.com/SketchyBar</link>
+    <guid>https://kaleempeeroo.com/SketchyBar</guid>
+    <description><![CDATA[ A custom application toolbar on Mac that I’ve customised to show Aerospace windows too. ]]></description>
+    <pubDate>Fri, 31 Jul 2026 17:50:47 GMT</pubDate>
+  </item><item>
     <title>How I do a Literature Search</title>
     <link>https://kaleempeeroo.com/How-I-do-a-Literature-Search</link>
     <guid>https://kaleempeeroo.com/How-I-do-a-Literature-Search</guid>
     <description><![CDATA[ There are 3 steps to doing a literature search (all of them involve looking for papers because its a literature search…): Use search engine to find 3 to 5 recent papers Find shared citations and repeated authors Find recent proceedings from top conference websites 1. ]]></description>
-    <pubDate>Mon, 13 Jul 2026 14:31:30 GMT</pubDate>
+    <pubDate>Mon, 13 Jul 2026 14:32:00 GMT</pubDate>
+  </item><item>
+    <title>Projects</title>
+    <link>https://kaleempeeroo.com/Projects</link>
+    <guid>https://kaleempeeroo.com/Projects</guid>
+    <description><![CDATA[ This page contains all of my technical projects, starting from when I taught myself HTML, CSS and JavaScript at the age of 12 to today where I implemented the full data science pipeline from multi-dimensional data collection and analysis to machine learning modelling, evaluation, and monitoring. ]]></description>
+    <pubDate>Mon, 13 Jul 2026 14:32:00 GMT</pubDate>
   </item><item>
     <title>Blog</title>
     <link>https://kaleempeeroo.com/Blog</link>
     <guid>https://kaleempeeroo.com/Blog</guid>
-    <description><![CDATA[ I’ve learnt a lot over the years of building and breaking things and most (if not all) of the time, doing something for the first time always took a long time because you end up spending a lot of time figuring things out. ]]></description>
+    <description><![CDATA[ Building and breaking things over the years has taught me a lot and I have spent a lot of time figuring things out. ]]></description>
     <pubDate>Fri, 10 Jul 2026 12:02:09 GMT</pubDate>
   </item><item>
     <title>Data Distribution Service Performance Prediction via Quantile Regression</title>
@@ -35,36 +65,6 @@
     <guid>https://kaleempeeroo.com/My-Principles-for-Weight-Training</guid>
     <description><![CDATA[  strength: move weight Hypertrophy: move muscle strength: 3 to 5 reps hypertrophy: 5 to 15 reps intensity is second most important thing (aim for 8 to 10 - I like the feeling of fighting the failure and pushing past your mental limit) most important thing is moving the muscle - focus and get that mi... ]]></description>
     <pubDate>Fri, 10 Jul 2026 12:02:09 GMT</pubDate>
-  </item><item>
-    <title>Projects</title>
-    <link>https://kaleempeeroo.com/Projects</link>
-    <guid>https://kaleempeeroo.com/Projects</guid>
-    <description><![CDATA[ This page contains all of my technical projects, starting from when I taught myself HTML, CSS and JavaScript at the age of 12 to today where I implemented the full data science pipeline from multi-dimensional data collection and analysis to machine learning modelling, evaluation, and monitoring. ]]></description>
-    <pubDate>Fri, 10 Jul 2026 12:02:09 GMT</pubDate>
-  </item><item>
-    <title>Home</title>
-    <link>https://kaleempeeroo.com/</link>
-    <guid>https://kaleempeeroo.com/</guid>
-    <description><![CDATA[ Projects | Research | Entrepreneurial Projects | Public Speaking | Blog | Contact | Dotfiles This website is a work in progress. ]]></description>
-    <pubDate>Fri, 10 Jul 2026 12:02:09 GMT</pubDate>
-  </item><item>
-    <title>AutoPerf</title>
-    <link>https://kaleempeeroo.com/AutoPerf</link>
-    <guid>https://kaleempeeroo.com/AutoPerf</guid>
-    <description><![CDATA[ Intro AutoPerf is a tool that I built for automated performance testing of data distribution service. Built entirely in Python all by myself. ]]></description>
-    <pubDate>Tue, 07 Jul 2026 22:18:39 GMT</pubDate>
-  </item><item>
-    <title>Contact</title>
-    <link>https://kaleempeeroo.com/Contact</link>
-    <guid>https://kaleempeeroo.com/Contact</guid>
-    <description><![CDATA[  PlatformContact / ProfileEmailmail@KaleemPeeroo.comLinkedInkaleem-peerooGitHubkaleem-peerooGoogle ScholarKaleem PeerooORCID0000-0001-8601-4750ResearchGateKaleem Peeroo. ]]></description>
-    <pubDate>Tue, 07 Jul 2026 22:18:39 GMT</pubDate>
-  </item><item>
-    <title>Data Distribution Service (DDS)</title>
-    <link>https://kaleempeeroo.com/Data-Distribution-Service-(DDS)</link>
-    <guid>https://kaleempeeroo.com/Data-Distribution-Service-(DDS)</guid>
-    <description><![CDATA[  middleware used in real time mission critical systems e.g. ]]></description>
-    <pubDate>Tue, 07 Jul 2026 22:18:39 GMT</pubDate>
   </item>
     </channel>
   </rss>

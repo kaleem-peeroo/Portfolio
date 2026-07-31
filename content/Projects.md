@@ -3,7 +3,7 @@ title: Projects
 aliases:
   - /Projects
 draft: false
-last_updated: 2026-06-25
+last_updated: 2026-07-31
 ---
 
 This page contains all of my technical projects, starting from when I taught myself HTML, CSS and JavaScript at the age of 12 to today where I implemented the full data science pipeline from multi-dimensional data collection and analysis to machine learning modelling, evaluation, and monitoring.

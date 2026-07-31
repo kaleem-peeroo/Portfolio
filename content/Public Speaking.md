@@ -1,3 +1,4 @@
+This page is a collection of some of my public speaking experiences over the years. I haven't gotten around to recording everything professionally. Yet.
 # 3MT
 <iframe width="560" height="315" src="https://www.youtube.com/embed/z8lDZERHkd4?si=vwYDWqX44P0f3dbb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 

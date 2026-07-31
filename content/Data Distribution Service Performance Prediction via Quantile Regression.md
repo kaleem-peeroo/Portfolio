@@ -11,7 +11,8 @@ See [[Predicting the Performance of Data Distribution Service via Percentile Reg
 - incorrectly reversing transformations when calculating evaluation metrics
 
 # Technical Decisions
-- pytorch instead of TensorFlow
+- pytorch over TensorFlow
+- visidata over excel
 
 # What I Would do Differently
 

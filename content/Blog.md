@@ -2,7 +2,7 @@
 draft: false
 ---
 
-I've learnt a lot over the years of building and breaking things and most (if not all) of the time, doing something for the first time always took a long time because you end up spending a lot of time figuring things out. These blog posts should hopefully save you time figuring the same things out.
+Building and breaking things over the years has taught me a lot and I have spent a lot of time figuring things out. These blog posts are a collection of the lessons learnt over my years of experience.
 
 - [[How I transitioned to Vim]]
 - [[How I Remember What I Read]]
@@ -12,5 +12,5 @@ I've learnt a lot over the years of building and breaking things and most (if no
 - [[My Data Visualisation Principles]]
 - [[How I Write Papers]]
 - [[My Principles for Weight Training]]
-- [[My Pi Setup]]
-- [[How I Study]]
+- [[How I Study New Content Effectively]]
+- [[How to Spot a Bad Paper]]

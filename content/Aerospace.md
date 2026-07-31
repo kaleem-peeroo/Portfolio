@@ -1,0 +1,1 @@
+Aerospace is a window tiling manager that I use on Mac. It lets you control all windows, their sizing, their layout (including horizontal and vertical splits), which monitors to show them on, and even when to show them, using the keyboard.

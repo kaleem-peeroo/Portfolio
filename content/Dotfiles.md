@@ -9,15 +9,15 @@ You can find my dotfiles [here](https://github.com/kaleem-peeroo/dotfiles). Here
 - Tmux
 - Visidata
 - Zsh
+- pi
 
-# Aerospace
-Aerospace is a window tiling manager that I use on Mac. It lets you control all windows, their sizing, their layout (including horizontal and vertical splits), which monitors to show them on, and even when to show them, using the keyboard.
+# [[Aerospace]]
 
-# NeoVim
-My editor of choice. Super highly configurable and I've configured it just the way I like. The biggest improvement I can remember is adding neotest to let you run tests and see their outcomes while you stay in the code. It saves you having a dedicated tmux pane for running unit tests.
+# [[pi]]
 
-# SketchyBar
-A custom application toolbar on Mac that I've customised to show Aerospace windows too. It shows the exact icons and outputs of commands (like checking the network download and upload throughput) that I choose.
+# [[NeoVim]]
+
+# [[SketchyBar]]
 
 # Tmux
 An application for terminal multiplexing. I've set up my custom keybinds for splitting panes, creating windows, and even switching between sessions.
