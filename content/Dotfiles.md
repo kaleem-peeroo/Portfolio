@@ -10,6 +10,7 @@ You can find my dotfiles [here](https://github.com/kaleem-peeroo/dotfiles). Here
 - Visidata
 - Zsh
 - pi
+- herdr
 
 # [[Aerospace]]
 

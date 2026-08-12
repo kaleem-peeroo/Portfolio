@@ -6,65 +6,65 @@
       <description>Last 10 notes on Kaleem Peeroo</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>Aerospace</title>
-    <link>https://kaleempeeroo.com/Aerospace</link>
-    <guid>https://kaleempeeroo.com/Aerospace</guid>
-    <description><![CDATA[ Aerospace is a window tiling manager that I use on Mac. ]]></description>
-    <pubDate>Fri, 31 Jul 2026 17:50:47 GMT</pubDate>
+    <title>ReadToRetain</title>
+    <link>https://kaleempeeroo.com/ReadToRetain</link>
+    <guid>https://kaleempeeroo.com/ReadToRetain</guid>
+    <description><![CDATA[ See it live at ReadToRetain.com. ]]></description>
+    <pubDate>Wed, 12 Aug 2026 15:27:04 GMT</pubDate>
   </item><item>
-    <title>pi</title>
-    <link>https://kaleempeeroo.com/pi</link>
-    <guid>https://kaleempeeroo.com/pi</guid>
-    <description><![CDATA[ Pi is my coding agent of choice. Why? Because of how barebones it is. It’s stripped everything out leaving just the bare minimum. ]]></description>
-    <pubDate>Fri, 31 Jul 2026 17:50:47 GMT</pubDate>
-  </item><item>
-    <title>NeoVim</title>
-    <link>https://kaleempeeroo.com/NeoVim</link>
-    <guid>https://kaleempeeroo.com/NeoVim</guid>
-    <description><![CDATA[ My editor of choice. Super highly configurable and I’ve configured it just the way I like. ]]></description>
-    <pubDate>Fri, 31 Jul 2026 17:50:47 GMT</pubDate>
-  </item><item>
-    <title>SketchyBar</title>
-    <link>https://kaleempeeroo.com/SketchyBar</link>
-    <guid>https://kaleempeeroo.com/SketchyBar</guid>
-    <description><![CDATA[ A custom application toolbar on Mac that I’ve customised to show Aerospace windows too. ]]></description>
-    <pubDate>Fri, 31 Jul 2026 17:50:47 GMT</pubDate>
-  </item><item>
-    <title>How I do a Literature Search</title>
-    <link>https://kaleempeeroo.com/How-I-do-a-Literature-Search</link>
-    <guid>https://kaleempeeroo.com/How-I-do-a-Literature-Search</guid>
-    <description><![CDATA[ There are 3 steps to doing a literature search (all of them involve looking for papers because its a literature search…): Use search engine to find 3 to 5 recent papers Find shared citations and repeated authors Find recent proceedings from top conference websites 1. ]]></description>
-    <pubDate>Mon, 13 Jul 2026 14:32:00 GMT</pubDate>
+    <title>Evaluating the Performance of Data Distribution Service using Statistical Methods</title>
+    <link>https://kaleempeeroo.com/Evaluating-the-Performance-of-Data-Distribution-Service-using-Statistical-Methods</link>
+    <guid>https://kaleempeeroo.com/Evaluating-the-Performance-of-Data-Distribution-Service-using-Statistical-Methods</guid>
+    <description><![CDATA[ Introduction Problem: need to evaluate performance of DDS to better understand it not easy to get performance of expensive configurations the longer you run the performance test the better too many configurations to look at typically people evaluate a specific scenario can we collect a lot of data a... ]]></description>
+    <pubDate>Wed, 12 Aug 2026 15:24:05 GMT</pubDate>
   </item><item>
     <title>Projects</title>
     <link>https://kaleempeeroo.com/Projects</link>
     <guid>https://kaleempeeroo.com/Projects</guid>
-    <description><![CDATA[ This page contains all of my technical projects, starting from when I taught myself HTML, CSS and JavaScript at the age of 12 to today where I implemented the full data science pipeline from multi-dimensional data collection and analysis to machine learning modelling, evaluation, and monitoring. ]]></description>
-    <pubDate>Mon, 13 Jul 2026 14:32:00 GMT</pubDate>
+    <description><![CDATA[ This page contains all of my technical projects, starting from when I taught myself HTML, CSS and JavaScript at the age of 12 to today where I create multi-agent systems. ]]></description>
+    <pubDate>Wed, 12 Aug 2026 15:24:05 GMT</pubDate>
+  </item><item>
+    <title>Research</title>
+    <link>https://kaleempeeroo.com/Research</link>
+    <guid>https://kaleempeeroo.com/Research</guid>
+    <description><![CDATA[ My research can be broken down into 2 main pieces: 1. Performance Evaluation of DDS 2. Performance Prediction of DDS See Also My Publications . ]]></description>
+    <pubDate>Wed, 12 Aug 2026 15:24:05 GMT</pubDate>
+  </item><item>
+    <title>Home</title>
+    <link>https://kaleempeeroo.com/</link>
+    <guid>https://kaleempeeroo.com/</guid>
+    <description><![CDATA[ Projects | Research | Entrepreneurial Projects | Public Speaking | Blog | Contact | Dotfiles This website is a work in progress. ]]></description>
+    <pubDate>Wed, 12 Aug 2026 15:24:05 GMT</pubDate>
+  </item><item>
+    <title>Aerospace</title>
+    <link>https://kaleempeeroo.com/Aerospace</link>
+    <guid>https://kaleempeeroo.com/Aerospace</guid>
+    <description><![CDATA[ Aerospace is a window tiling manager that I use on Mac. ]]></description>
+    <pubDate>Fri, 31 Jul 2026 17:51:21 GMT</pubDate>
   </item><item>
     <title>Blog</title>
     <link>https://kaleempeeroo.com/Blog</link>
     <guid>https://kaleempeeroo.com/Blog</guid>
     <description><![CDATA[ Building and breaking things over the years has taught me a lot and I have spent a lot of time figuring things out. ]]></description>
-    <pubDate>Fri, 10 Jul 2026 12:02:09 GMT</pubDate>
+    <pubDate>Fri, 31 Jul 2026 17:51:21 GMT</pubDate>
   </item><item>
     <title>Data Distribution Service Performance Prediction via Quantile Regression</title>
     <link>https://kaleempeeroo.com/Data-Distribution-Service-Performance-Prediction-via-Quantile-Regression</link>
     <guid>https://kaleempeeroo.com/Data-Distribution-Service-Performance-Prediction-via-Quantile-Regression</guid>
     <description><![CDATA[ Intro full data science pipeline from data cleaning all the way through to automated model tuning (with Optuna) and monitoring through use of linear regression, random forest, xgboost, and neural networks. ]]></description>
-    <pubDate>Fri, 10 Jul 2026 12:02:09 GMT</pubDate>
+    <pubDate>Fri, 31 Jul 2026 17:51:21 GMT</pubDate>
   </item><item>
-    <title>My Data Visualisation Principles</title>
-    <link>https://kaleempeeroo.com/My-Data-Visualisation-Principles</link>
-    <guid>https://kaleempeeroo.com/My-Data-Visualisation-Principles</guid>
-    <description><![CDATA[  remove everything that does not add value or help the visualisation use this tool for picking your colours the visualisation should tell a story emphasise specific points make it easy to understand the visualisation . ]]></description>
-    <pubDate>Fri, 10 Jul 2026 12:02:09 GMT</pubDate>
+    <title>Dotfiles</title>
+    <link>https://kaleempeeroo.com/Dotfiles</link>
+    <guid>https://kaleempeeroo.com/Dotfiles</guid>
+    <description><![CDATA[ You can find my dotfiles here. ]]></description>
+    <pubDate>Fri, 31 Jul 2026 17:51:21 GMT</pubDate>
   </item><item>
-    <title>My Principles for Weight Training</title>
-    <link>https://kaleempeeroo.com/My-Principles-for-Weight-Training</link>
-    <guid>https://kaleempeeroo.com/My-Principles-for-Weight-Training</guid>
-    <description><![CDATA[  strength: move weight Hypertrophy: move muscle strength: 3 to 5 reps hypertrophy: 5 to 15 reps intensity is second most important thing (aim for 8 to 10 - I like the feeling of fighting the failure and pushing past your mental limit) most important thing is moving the muscle - focus and get that mi... ]]></description>
-    <pubDate>Fri, 10 Jul 2026 12:02:09 GMT</pubDate>
+    <title>How I Got to 130WPM Typing Speed</title>
+    <link>https://kaleempeeroo.com/How-I-Got-to-130WPM-Typing-Speed</link>
+    <guid>https://kaleempeeroo.com/How-I-Got-to-130WPM-Typing-Speed</guid>
+    <description><![CDATA[  That is a screenshot of my fastest typing speed recorded on my MonkeyType profile. That is a speed of 131 words per minute (WPM). ]]></description>
+    <pubDate>Fri, 31 Jul 2026 17:51:21 GMT</pubDate>
   </item>
     </channel>
   </rss>

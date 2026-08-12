@@ -1,8 +1,9 @@
-- Problem: 
-	- need to evaluate performance of DDS to better understand it
-	- not easy to get performance of expensive configurations
-	- the longer you run the performance test the better
-	- too many configurations to look at
+# Introduction
+Problem:
+- need to evaluate performance of DDS to better understand it
+- not easy to get performance of expensive configurations
+- the longer you run the performance test the better
+- too many configurations to look at
 - typically people evaluate a specific scenario
 - can we collect a lot of data and use Statistical Methods to analyse it?
 - can we look at how specific parameters impact the performance? 
