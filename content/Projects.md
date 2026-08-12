@@ -6,18 +6,21 @@ draft: false
 last_updated: 2026-07-31
 ---
 
-This page contains all of my technical projects, starting from when I taught myself HTML, CSS and JavaScript at the age of 12 to today where I implemented the full data science pipeline from multi-dimensional data collection and analysis to machine learning modelling, evaluation, and monitoring.
+This page contains all of my technical projects, starting from when I taught myself HTML, CSS and JavaScript at the age of 12 to today where I create multi-agent systems.
 
-My projects can be temporally (most recent first) broken down into:
-1. [[0_portfolio/Projects#1. Data Science|Data Science]]
-2. [[0_portfolio/Projects#2. System Apps|System Apps]]
-3. [[0_portfolio/Projects#3. Games|Games]]
-4. [[0_portfolio/Projects#4. Full-Stack Web Apps|Full-Stack Web Apps]]
-5. [[0_portfolio/Projects#5. Websites|Websites]]
+1. [[0_portfolio/Projects#1. AI|AI]]
+2. [[0_portfolio/Projects#2. Data Science|Data Science]]
+3. [[0_portfolio/Projects#3. System Apps|System Apps]]
+4. [[0_portfolio/Projects#4. Games|Games]]
+5. [[0_portfolio/Projects#5. Full-Stack Web Apps|Full-Stack Web Apps]]
+6. [[0_portfolio/Projects#6. Websites|Websites]]
 
 You can find a full list of all of my projects right at the [[0_portfolio/Projects#All Projects|bottom]].
+# 1. AI
+- [[ReadToRetain]]
+- [[SearchInScience]]
 
-# 1. Data Science
+# 2. Data Science
 - [[Data Distribution Service Performance Prediction via Quantile Regression|DDS Performance Prediction via Quantile Regression]]
 	1. Setting up physical testbeds.
 	2. Building experimentation harness.
@@ -26,7 +29,7 @@ You can find a full list of all of my projects right at the [[0_portfolio/Projec
 	5. Analysing the data using statistical methods.
 	6. Modelling machine learning models to predict performance distributions as percentiles.
 
-# 2. System Apps
+# 3. System Apps
 - [[Stochastic Ordering for eCDFs (STOE)]]
 	- Tool for automating stochastic analysis of eCDFs for thousands of configured experiments.
 	- Saved over 16 hours of manual analysis work.
@@ -35,12 +38,12 @@ You can find a full list of all of my projects right at the [[0_portfolio/Projec
 	- Saved 333 hours of manual experimentation.
 	- Produced 21 datasets totalling 7 GB of measurement data.
 
-# 3. Games
+# 4. Games
 - I dabbled in making games
 	- Over the summer in college I built a super hard maze game - no one has beaten it to this day - I've lost the binary so no one can ever beat the game 👀
 	- I build a very simple RPG game using RPG maker in college
 
-# 4. Full-Stack Web Apps
+# 5. Full-Stack Web Apps
 - made first full stack web app with ASP.net + MySQL + HTML + CSS for college coursework
 	- booking system for sports centre with CRUD functionality
 - then learnt how to make full stack web app with PHP instead of ASP.net
@@ -55,7 +58,7 @@ You can find a full list of all of my projects right at the [[0_portfolio/Projec
 	- [companedia](https://github.com/kaleem-peeroo/Companedia-Script): app for scraping companies info when applying for placements in 2nd year uni
 	- [GARITS](https://github.com/kaleem-peeroo/Garits): team project. I was project manager and developed 95% of the system. We won first prize.
 
-# 5. Websites
+# 6. Websites
 - learnt HTML + CSS using Codecademy.com at the age of 12
 - built my first website using just HTML + CSS
 - built transition site for friends cousins company (first year college)
@@ -66,6 +69,7 @@ You can find a full list of all of my projects right at the [[0_portfolio/Projec
 # All Projects
 This list goes starts from most recent.
 - [[ReadToRetain]]
+- [[SearchInScience]]
 - [[Data Distribution Service Performance Prediction via Quantile Regression]]
 - [[Stochastic Ordering for eCDFs (STOE)]]
 - [[0_portfolio/AutoPerf|AutoPerf]]

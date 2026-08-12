@@ -11,7 +11,7 @@ const config: QuartzConfig = {
     pageTitle: "Kaleem Peeroo",
     pageTitleSuffix: "",
     enableSPA: true,
-    enablePopovers: true,
+    enablePopovers: false,
     analytics: {
       provider: "google",
       tagId: "G-W45E6W22LM",

@@ -5,7 +5,8 @@ aliases:
   - /Research
 ---
 My research can be broken down into 2 main pieces: 
-# [[Evaluating the Performance of Data Distribution Service using Statistical Methods|Performance Evaluation of DDS]]
-# [[Predicting the Performance of Data Distribution Service via Percentile Regression using Machine Learning|Performance Prediction of DDS]]
+# [[Evaluating the Performance of Data Distribution Service using Statistical Methods|1. Performance Evaluation of DDS]]
+# [[Predicting the Performance of Data Distribution Service via Percentile Regression using Machine Learning|2. Performance Prediction of DDS]]
 
-# [[Publications]]
+# See Also
+- [[Publications|My Publications]]
