@@ -27,12 +27,10 @@ You can find a full list of all of my projects right at the [[0_portfolio/Projec
 	- Entire orchestration suite used to deploy experiments, execute them, gather the data and produce a dataset.
 	- Saved 333 hours of manual experimentation.
 	- Produced 21 datasets totalling 7 GB of measurement data.
-
 # 4. Games
 - I dabbled in making games
 	- Over the summer in college I built a super hard maze game - no one has beaten it to this day - I've lost the binary so no one can ever beat the game 👀
-	- I build a very simple RPG game using RPG maker in college
-
+	- I built a very simple RPG game using RPG maker in college
 # 5. Full-Stack Web Apps
 - made first full stack web app with ASP.net + MySQL + HTML + CSS for college coursework
 	- booking system for sports centre with CRUD functionality
@@ -47,7 +45,6 @@ You can find a full list of all of my projects right at the [[0_portfolio/Projec
 		- Basically, reimplementing what was shown on Moodle using the content on Moodle...
 	- [companedia](https://github.com/kaleem-peeroo/Companedia-Script): app for scraping companies info when applying for placements in 2nd year uni
 	- [GARITS](https://github.com/kaleem-peeroo/Garits): team project. I was project manager and developed 95% of the system. We won first prize.
-
 # 6. Websites
 - learnt HTML + CSS using Codecademy.com at the age of 12
 - built my first website using just HTML + CSS
