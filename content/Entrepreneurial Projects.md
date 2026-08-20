@@ -1,6 +1,6 @@
 ---
 title: Entrepreneurial Projects
-draft: true
+draft: false
 ---
 
 - medclick

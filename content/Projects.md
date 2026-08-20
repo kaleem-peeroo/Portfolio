@@ -7,19 +7,10 @@ last_updated: 2026-07-31
 ---
 
 This page contains all of my technical projects, starting from when I taught myself HTML, CSS and JavaScript at the age of 12 to today where I create multi-agent systems.
-
-1. [[0_portfolio/Projects#1. AI|AI]]
-2. [[0_portfolio/Projects#2. Data Science|Data Science]]
-3. [[0_portfolio/Projects#3. System Apps|System Apps]]
-4. [[0_portfolio/Projects#4. Games|Games]]
-5. [[0_portfolio/Projects#5. Full-Stack Web Apps|Full-Stack Web Apps]]
-6. [[0_portfolio/Projects#6. Websites|Websites]]
-
 You can find a full list of all of my projects right at the [[0_portfolio/Projects#All Projects|bottom]].
 # 1. AI
 - [[ReadToRetain]]
 - [[SearchInScience]]
-
 # 2. Data Science
 - [[Data Distribution Service Performance Prediction via Quantile Regression|DDS Performance Prediction via Quantile Regression]]
 	1. Setting up physical testbeds.
@@ -28,11 +19,10 @@ You can find a full list of all of my projects right at the [[0_portfolio/Projec
 	4. Building a multivariate dataset of thousands of configurations.
 	5. Analysing the data using statistical methods.
 	6. Modelling machine learning models to predict performance distributions as percentiles.
-
 # 3. System Apps
 - [[Stochastic Ordering for eCDFs (STOE)]]
 	- Tool for automating stochastic analysis of eCDFs for thousands of configured experiments.
-	- Saved over 16 hours of manual analysis work.
+	- Saved over 16 hours of manual analysis.
 - [[0_portfolio/AutoPerf|AutoPerf]]
 	- Entire orchestration suite used to deploy experiments, execute them, gather the data and produce a dataset.
 	- Saved 333 hours of manual experimentation.
@@ -65,17 +55,16 @@ You can find a full list of all of my projects right at the [[0_portfolio/Projec
 	- just a page that informed users that they were being redirected outside of the company
 - built a website for friends startup for connecting doctors with patients (first year uni)
 	- just a homepage that advertised what the startup did (more like would do)
-
 # All Projects
-This list goes starts from most recent.
-- [[ReadToRetain]]
-- [[SearchInScience]]
-- [[Data Distribution Service Performance Prediction via Quantile Regression]]
-- [[Stochastic Ordering for eCDFs (STOE)]]
-- [[0_portfolio/AutoPerf|AutoPerf]]
-- [[Bookmarker]]
-- [[MyDiary]]
-- [[Library System]]
-- [[pdfs2web]]
-- [[Companedia]]
-- [[GARITS]]
+This list starts from most recent.
+1. [[ReadToRetain]]
+2. [[SearchInScience]]
+3. [[Data Distribution Service Performance Prediction via Quantile Regression]]
+4. [[Stochastic Ordering for eCDFs (STOE)]]
+5. [[0_portfolio/AutoPerf|AutoPerf]]
+6. [[Bookmarker]]
+7. [[MyDiary]]
+8. [[Library System]]
+9. [[pdfs2web]]
+10. [[Companedia]]
+11. [[GARITS]]

@@ -8,7 +8,8 @@ last_updated: 2026-06-25
 
 # Intro
 [AutoPerf](https://github.com/kaleem-peeroo/AutoPerf) is a tool that I built for automated performance testing of data distribution service.
-Built entirely in Python all by myself.
+Built entirely in Python all by myself before AI became a thing.
+You first define configurations of your experimental campaigns which includes settings like parameter values, machines used, smart plug IPs, etc. You then run the tool and it will set up connections with the machines, ensure that the appropriate software is available (RTI's Perftest) and then run experiments with machine restarts before each experiment. It tracks the status of experiments in real-time and I even created a monitoring tool to display this as a nice TUI which I would access and view via my phone through SSH.
 
 How does it work?
 1. Define configuration
@@ -33,18 +34,15 @@ How does it work?
 	5. Wait for experiment to end
 3. Download data from each machine.
 4. Run next experiment until end of campaign.
-
 # Challenges
 - sometimes machines are unreachable (both via ping or ssh)
 - when one machine fails, all others continue running anyway
 - experiments with no data
 - experiments with data from previously running experiments
 - experiments that fail on first try but eventually succeed when rerun
-
 # Mistakes
 - not using OOP at the start
 - not having an explicit config file - configuration settings were hardcoded into source code
-
 # Technical Decisions
 - choosing Python
 	- easiest to write in
@@ -55,11 +53,9 @@ How does it work?
 	- got really messy
 	- eventually moved to OOP
 		- real-life painful lesson of the benefits of OOP
-
 # What I'd Do Differently
 - Learn and write in Rust.
 - Use a database - maybe something like MongoDB because data is very tabular.
-
 # Future Work
 How to scale?
 How to optimise?
