@@ -6,6 +6,24 @@
       <description>Last 10 notes on Kaleem Peeroo</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Projects</title>
+    <link>https://kaleempeeroo.com/Projects</link>
+    <guid>https://kaleempeeroo.com/Projects</guid>
+    <description><![CDATA[ This page contains all of my technical projects, starting from when I taught myself HTML, CSS and JavaScript at the age of 12 to today where I create multi-agent systems. ]]></description>
+    <pubDate>Thu, 20 Aug 2026 19:03:32 GMT</pubDate>
+  </item><item>
+    <title>ReadToRetain</title>
+    <link>https://kaleempeeroo.com/ReadToRetain</link>
+    <guid>https://kaleempeeroo.com/ReadToRetain</guid>
+    <description><![CDATA[ See it live at ReadToRetain.com. ]]></description>
+    <pubDate>Thu, 20 Aug 2026 19:03:32 GMT</pubDate>
+  </item><item>
+    <title>Home</title>
+    <link>https://kaleempeeroo.com/</link>
+    <guid>https://kaleempeeroo.com/</guid>
+    <description><![CDATA[ Projects | Research | Entrepreneurial Projects | Public Speaking | Blog | Contact | Dotfiles This website is a work in progress. ]]></description>
+    <pubDate>Thu, 20 Aug 2026 19:03:32 GMT</pubDate>
+  </item><item>
     <title>AutoPerf</title>
     <link>https://kaleempeeroo.com/AutoPerf</link>
     <guid>https://kaleempeeroo.com/AutoPerf</guid>
@@ -18,22 +36,10 @@
     <description><![CDATA[  medclick giftann when and where ReadToRetain SearchInScience . ]]></description>
     <pubDate>Thu, 20 Aug 2026 18:56:20 GMT</pubDate>
   </item><item>
-    <title>Projects</title>
-    <link>https://kaleempeeroo.com/Projects</link>
-    <guid>https://kaleempeeroo.com/Projects</guid>
-    <description><![CDATA[ This page contains all of my technical projects, starting from when I taught myself HTML, CSS and JavaScript at the age of 12 to today where I create multi-agent systems. ]]></description>
-    <pubDate>Thu, 20 Aug 2026 18:56:20 GMT</pubDate>
-  </item><item>
     <title>Publications</title>
     <link>https://kaleempeeroo.com/Publications</link>
     <guid>https://kaleempeeroo.com/Publications</guid>
     <description><![CDATA[ 2025 MIDDLEWARE 2025: PANDAS: Peer-to-peer, Adaptive Networking Allowing Data Availability Sampling within Ethereum Consensus Timebounds 2024 EDCC 2024: Machine Learning for Performance Prediction of Data Distribution Service (DDS) CGVC 2024: Visualising the Impact of High-dimensional Configuration ... ]]></description>
-    <pubDate>Thu, 20 Aug 2026 18:56:20 GMT</pubDate>
-  </item><item>
-    <title>ReadToRetain</title>
-    <link>https://kaleempeeroo.com/ReadToRetain</link>
-    <guid>https://kaleempeeroo.com/ReadToRetain</guid>
-    <description><![CDATA[ See it live at ReadToRetain.com. ]]></description>
     <pubDate>Thu, 20 Aug 2026 18:56:20 GMT</pubDate>
   </item><item>
     <title>SearchInScience</title>
@@ -58,12 +64,6 @@
     <link>https://kaleempeeroo.com/Evaluating-the-Performance-of-Data-Distribution-Service-using-Statistical-Methods</link>
     <guid>https://kaleempeeroo.com/Evaluating-the-Performance-of-Data-Distribution-Service-using-Statistical-Methods</guid>
     <description><![CDATA[ Introduction Problem: need to evaluate performance of DDS to better understand it not easy to get performance of expensive configurations the longer you run the performance test the better too many configurations to look at typically people evaluate a specific scenario can we collect a lot of data a... ]]></description>
-    <pubDate>Wed, 12 Aug 2026 15:27:30 GMT</pubDate>
-  </item><item>
-    <title>Research</title>
-    <link>https://kaleempeeroo.com/Research</link>
-    <guid>https://kaleempeeroo.com/Research</guid>
-    <description><![CDATA[ My research can be broken down into 2 main pieces: 1. Performance Evaluation of DDS 2. Performance Prediction of DDS See Also My Publications . ]]></description>
     <pubDate>Wed, 12 Aug 2026 15:27:30 GMT</pubDate>
   </item>
     </channel>
