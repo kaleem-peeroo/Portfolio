@@ -2,3 +2,5 @@ node_modules/
 quartz/.quartz-cache/
 tsconfig.tsbuildinfo
 *.tsbuildinfo
+.substack-env
+.portfolio-path

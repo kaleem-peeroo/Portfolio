@@ -17,9 +17,11 @@ if [ -z "$CONTENT_SRC" ]; then
   echo "Error: No content path provided."
   echo ""
   echo "Provide the path in one of these ways:"
-  echo "  1. Pass as argument:               $0 ~/vault 2.0/0_portfolio"
-  echo "  2. Create .portfolio-path file:    echo '~/vault 2.0/0_portfolio' > .portfolio-path"
-  echo "  3. Set PORTFOLIO_PATH env var:      export PORTFOLIO_PATH='~/vault 2.0/0_portfolio'"
+  echo "  1. Pass as argument:               $0 ~/path/to/your/vault"
+  echo "  2. Create .portfolio-path file:    echo '~/path/to/your/vault' > .portfolio-path"
+  echo "  3. Set PORTFOLIO_PATH env var:      export PORTFOLIO_PATH='~/path/to/your/vault'"
+  echo ""
+  echo "Note: .portfolio-path is local-only (gitignored) — each machine sets its own."
   exit 1
 fi
 
